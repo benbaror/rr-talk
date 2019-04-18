@@ -829,9 +829,60 @@
 							</div>
 						</div>
 					</div>
-
 				</section>
 
+				<section id="slide-20">
+					<h3>Scalar Resonant Relaxation</h3>
+					<div class="grid fig-title">
+						<div class="row">
+							<div class="col-4">
+								<h4 align="left">Fokker Plank Equation</h4>
+								<p>
+									$$
+									\frac{\partial P(J, t; a)}{\partial t} = \frac{1}{2}\frac{\partial}{\partial J} \bigg[J D_{JJ}^\mathrm{RR}(a, J) \frac{\partial}{\partial J} \frac{P(J,t; a)}{J} \bigg]
+									$$
+								</p>
+								<h4 align="left">Diffusion coefficient</h4>
+								<p align="left">
+									\(
+									D_{JJ}^\mathrm{RR}(a, J)  =
+									\)
+									$$
+									4 \pi G^2 \sum_i m_i^2 \sum_{n=1}^\infty \sum_{n'=-\infty}^\infty n^2 \int da' dJ' f(a',J')
+									$$
+									$$
+									\quad \quad \quad \quad  |A_{nn'}(a,J,a',J')|^2 \delta (n \nu_p(a,J) - n' \nu_p(a',J'))
+									$$
+								</p>
+								<h4 align="left">"Dynamical friction"</h4>
+								<p align="left">
+									\(
+									D_{J, \mathrm{friction}}^\mathrm{RR}(a, J)
+									\)
+									$$
+									4 \pi G^2 \sum_i m_i^2 \sum_{n=1}^\infty \sum_{n'=-\infty}^\infty n n' \int da' dJ' J' \partial_J' \big[f(a',J')/J'\big]
+									$$
+									$$
+									\quad \quad \quad \quad  |A_{nn'}(a,J,a',J')|^2 \delta (n \nu_p(a,J) - n' \nu_p(a',J'))
+									$$
+								</p>
+							</div>
+							<div class="col-8">
+								<div class="container">
+									<div class="fragment fade-out abs" data-fragment-index="1" align="right">
+										<img src="./images/DRR.png" width="80%" alt="">
+									</div>
+									<div class="fragment current-visible  abs" data-fragment-index="1" align="right">
+										<img src="./images/DRR.png" width="80%" alt="">
+									</div>
+									<div class="fragment current-visible  abs" data-fragment-index="1" align="right">
+										<img src="./images/DRR_res.png" width="80%" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 
 				<section id="slide-orgheadline21">
 					<h3 id="orgheadline21">Relativistic orbits are driven by <br> <font color = "yellow">\(2\)-body relaxation</font></h3>
@@ -856,21 +907,90 @@
 										</p>
 									</div>
 									<div class="fragment abs" data-fragment-index="2">
-										<h4>
-
-										</h4>
 										<p width="50%">
-											<img src="./images/GC_model_dsty_a.png" alt="GC_model_dsty_a.png" width="50%" /><br>
-											Steady State (Bar-Or and Alexander, 2016)
+											<img src="./images/phase_space.png" alt="phase_space.png" width="60%" />
+											<br>
+											Bar-Or and Fouvry (2018)
 										</p>
+
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-
 				</section>
 
+				<section id="slide-22">
+					<h3 id="orgheadline21">Timescales </h3>
+					<div class="grid fig-title">
+						<div class="row">
+							<div class="col-12">
+								<div class="container">
+									<div  class="fragment abs"  data-fragment-index="1">
+										<img src="./images/timescales.png" alt="timescales" width="60%" />
+										<br>
+										Bar-Or and Fouvry (2018)
+									</div>
+									<div  class="fragment abs" data-fragment-index="1">
+										<img src="./images/s_stars_times.png" alt="s_stars_times.png" width="60%" />
+										<br>
+										Bar-Or and Fouvry (2018)
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section id="slide-23">
+					<h3>Vector Resonant Relaxation</h3>
+					<div class="grid fig-title">
+						<div class="row">
+							<div class="col-4">
+								<h4 align="left">Fokker Plank Equation</h4>
+								<p>
+									$$
+									\frac{\partial P(J, t; a)}{\partial t} = \frac{1}{2}\frac{\partial}{\partial J} \bigg[J D_{JJ}^\mathrm{RR}(a, J) \frac{\partial}{\partial J} \frac{P(J,t; a)}{J} \bigg]
+									$$
+								</p>
+								<h4 align="left">Diffusion coefficient</h4>
+								<p align="left">
+									\(
+									D_{JJ}^\mathrm{RR}(a, J)  =
+									\)
+									$$
+									4 \pi G^2 \sum_i m_i^2 \sum_{n=1}^\infty \sum_{n'=-\infty}^\infty n^2 \int da' dJ' f(a',J')
+									$$
+									$$
+									\quad \quad \quad \quad  |A_{nn'}(a,J,a',J')|^2 \delta (n \nu_p(a,J) - n' \nu_p(a',J'))
+									$$
+								</p>
+								<h4 align="left">"Dynamical friction"</h4>
+								<p align="left">
+									\(
+									D_{J, \mathrm{friction}}^\mathrm{RR}(a, J)
+									\)
+									$$
+									4 \pi G^2 \sum_i m_i^2 \sum_{n=1}^\infty \sum_{n'=-\infty}^\infty n n' \int da' dJ' J' \partial_J' \big[f(a',J')/J'\big]
+									$$
+									$$
+									\quad \quad \quad \quad  |A_{nn'}(a,J,a',J')|^2 \delta (n \nu_p(a,J) - n' \nu_p(a',J'))
+									$$
+								</p>
+							</div>
+							<div class="col-8">
+								<div class="container">
+									<div class="fragment fade-out abs" data-fragment-index="1" align="right">
+										<img src="./images/disk_interaction.png" width="80%" alt="">
+									</div>
+									<div class="fragment current-visible  abs" data-fragment-index="1" align="right">
+										<video loop data-autoplay data-src="./images/j_a_RR.mp4" type="video/mp4"></video>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 			</div>
 		</div>
 
