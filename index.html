@@ -787,7 +787,7 @@
 				</section>
 
 				<section id="slide-orgheadline19">
-					<h3 id="orgheadline19">Resonant relaxation can be describe by an effective <font color = "yellow">diffusion equation</font></h3>
+					<h3 id="orgheadline19">Resonant relaxation can be described by an effective <font color = "yellow">diffusion equation</font></h3>
 					<div class="grid">
 						<div class="row">
 							<div class="col-6">
@@ -841,6 +841,9 @@
 									$$
 									\frac{\partial P(J, t; a)}{\partial t} = \frac{1}{2}\frac{\partial}{\partial J} \bigg[J D_{JJ}^\mathrm{RR}(a, J) \frac{\partial}{\partial J} \frac{P(J,t; a)}{J} \bigg]
 									$$
+									$$
+									- \color{magenta}{\frac{\partial}{\partial J} \bigg[D_{J, \mathrm{friction}}^\mathrm{RR}(a, J)   P(J,t; a) \bigg]}
+									$$
 								</p>
 								<h4 align="left">Diffusion coefficient</h4>
 								<p align="left">
@@ -848,22 +851,22 @@
 									D_{JJ}^\mathrm{RR}(a, J)  =
 									\)
 									$$
-									4 \pi G^2 \sum_i m_i^2 \sum_{n=1}^\infty \sum_{n'=-\infty}^\infty n^2 \int da' dJ' f(a',J')
+									4 \pi G^2 \sum_i m_i^2 \sum_{n, n'} n^2 \int da' dJ' f(a',J')|A_{nn'}|^2
 									$$
 									$$
-									\quad \quad \quad \quad  |A_{nn'}(a,J,a',J')|^2 \delta (n \nu_p(a,J) - n' \nu_p(a',J'))
+									\quad \quad \quad \quad \times  \color{yellow}{\delta (n \nu_p(a,J) - n' \nu_p(a',J'))}
 									$$
 								</p>
 								<h4 align="left">"Dynamical friction"</h4>
 								<p align="left">
 									\(
-									D_{J, \mathrm{friction}}^\mathrm{RR}(a, J)
+									\color{magenta}{D_{J, \mathrm{friction}}^\mathrm{RR}(a, J)} =
 									\)
 									$$
-									4 \pi G^2 \sum_i m_i^2 \sum_{n=1}^\infty \sum_{n'=-\infty}^\infty n n' \int da' dJ' J' \partial_J' \big[f(a',J')/J'\big]
+									4 \pi G^2 \sum_i m_i^2 \sum_{n,n'} n n' \int da' dJ' J' \color{magenta}{\partial_J' \big[f(a',J')/J'\big]}|A_{nn'}|^2
 									$$
 									$$
-									\quad \quad \quad \quad  |A_{nn'}(a,J,a',J')|^2 \delta (n \nu_p(a,J) - n' \nu_p(a',J'))
+									\quad \quad \quad \quad  \times  \color{yellow}{\delta (n \nu_p(a,J) - n' \nu_p(a',J'))}
 									$$
 								</p>
 							</div>
@@ -872,10 +875,10 @@
 									<div class="fragment fade-out abs" data-fragment-index="1" align="right">
 										<img src="./images/DRR.png" width="80%" alt="">
 									</div>
-									<div class="fragment current-visible  abs" data-fragment-index="1" align="right">
+									<div class="fragment abs" data-fragment-index="1" align="right">
 										<img src="./images/DRR.png" width="80%" alt="">
 									</div>
-									<div class="fragment current-visible  abs" data-fragment-index="1" align="right">
+									<div class="fragment abs" data-fragment-index="1" align="right">
 										<img src="./images/DRR_res.png" width="80%" alt="">
 									</div>
 								</div>
@@ -926,12 +929,12 @@
 						<div class="row">
 							<div class="col-12">
 								<div class="container">
-									<div  class="fragment abs"  data-fragment-index="1">
-										<img src="./images/timescales.png" alt="timescales" width="60%" />
+									<div  class="abs">
+										<img src="./images/timescales_novrr.png" alt="timescales" width="60%" />
 										<br>
 										Bar-Or and Fouvry (2018)
 									</div>
-									<div  class="fragment abs" data-fragment-index="1">
+									<div  class="abs">
 										<img src="./images/s_stars_times.png" alt="s_stars_times.png" width="60%" />
 										<br>
 										Bar-Or and Fouvry (2018)
@@ -946,45 +949,141 @@
 					<h3>Vector Resonant Relaxation</h3>
 					<div class="grid fig-title">
 						<div class="row">
-							<div class="col-4">
-								<h4 align="left">Fokker Plank Equation</h4>
-								<p>
-									$$
-									\frac{\partial P(J, t; a)}{\partial t} = \frac{1}{2}\frac{\partial}{\partial J} \bigg[J D_{JJ}^\mathrm{RR}(a, J) \frac{\partial}{\partial J} \frac{P(J,t; a)}{J} \bigg]
-									$$
-								</p>
-								<h4 align="left">Diffusion coefficient</h4>
+							<div class="col-5">
+								<h4 align="left">Equation of motion</h4>
 								<p align="left">
-									\(
-									D_{JJ}^\mathrm{RR}(a, J)  =
-									\)
 									$$
-									4 \pi G^2 \sum_i m_i^2 \sum_{n=1}^\infty \sum_{n'=-\infty}^\infty n^2 \int da' dJ' f(a',J')
+									\frac{\partial \mathbf{L}}{\partial  t} = \frac{\partial }{\partial \mathbf{L}}\!\! \times \! (H \mathbf{L}) = M_{\ell k}(t) X_{\ell k}(\mathbf{L})
 									$$
-									$$
-									\quad \quad \quad \quad  |A_{nn'}(a,J,a',J')|^2 \delta (n \nu_p(a,J) - n' \nu_p(a',J'))
-									$$
+									<ul>
+										<li>
+											Magnetization
+											\( M_{\ell k}(t) = \sum_{i}^{N} A_{\ell} Y_{\ell k}(\hat{\mathbf{L}}_i(t))\)
+										</li>
+										<li>
+											\(
+											X_{\ell k} =\mathbf{L} \!\! \times \! \frac{\partial Y}{\partial \mathbf{L}}
+											\)
+										</li>
+									</ul>
+
 								</p>
-								<h4 align="left">"Dynamical friction"</h4>
+								<h4 align="left">Statistical Description</h4>
+								<ul>
+									<li>
+										Typical torques \(\Gamma \sim \sqrt{\langle \dot{\mathbf{L}}\cdot \dot{\mathbf{L}} \rangle }\)
+									</li>
+									<li>
+										Coherence time \(T_\mathrm{c} \propto L_\mathrm{c}/\Gamma\)
+									</li>
+								</ul>
+
+
+								<h4 align="left">Effective description</h4>
 								<p align="left">
+									$$
+									\frac{\partial \mathbf{L}}{\partial  t} = \Gamma \, \eta(t)\times\hat{\mathbf{L}}
+									$$
+									Correlated noise
 									\(
-									D_{J, \mathrm{friction}}^\mathrm{RR}(a, J)
+									\langle \eta_i(t) \eta_j(t') \rangle = \delta_{ij} e^{-(t-t')^2/T_\mathrm{c}^2}
 									\)
-									$$
-									4 \pi G^2 \sum_i m_i^2 \sum_{n=1}^\infty \sum_{n'=-\infty}^\infty n n' \int da' dJ' J' \partial_J' \big[f(a',J')/J'\big]
-									$$
-									$$
-									\quad \quad \quad \quad  |A_{nn'}(a,J,a',J')|^2 \delta (n \nu_p(a,J) - n' \nu_p(a',J'))
-									$$
 								</p>
 							</div>
-							<div class="col-8">
+							<div class="col-7">
 								<div class="container">
 									<div class="fragment fade-out abs" data-fragment-index="1" align="right">
-										<img src="./images/disk_interaction.png" width="80%" alt="">
+										<img src="./images/disk_interaction.png" width="100%" alt="">
 									</div>
 									<div class="fragment current-visible  abs" data-fragment-index="1" align="right">
-										<video loop data-autoplay data-src="./images/j_a_RR.mp4" type="video/mp4"></video>
+										<video loop data-autoplay data-src="./images/res_NoiseCorrelation_RandomWalk_OneMassHarmonic_seed_1.mp4" type="video/mp4"></video>
+									</div>
+									<div class="fragment current-visible abs" data-fragment-index="2" align="right">
+										<img src="./images/vrr_corr.png" width="100%" alt="">
+									</div>
+									<div class="fragment current-visible abs" data-fragment-index="3" align="right">
+										<img src="./images/figIllustrationRandom.png" width="100%" alt="">
+									</div>
+									<div class="fragment abs" data-fragment-index="4" align="right">
+										<img src="./images/figIllustrationRandomFake.png" width="100%" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section id="slide-24">
+					<h3>Vector Resonant Relaxation can enhance <br> Eccentric  Binary black hole Mergers</h3>
+					<div class="grid fig-title">
+						<div class="row">
+							<div class="col-5">
+								<ul>
+									<li>
+										Binary orbit driven by Lidov-Kozai oscillations
+										<p>
+											$$
+											t_\mathrm{LK} \sim \frac{P_\mathrm{out}^2}{P_\mathrm{in}} (1-e^2_\mathrm{out})^{3/2}
+											$$
+										</p>
+									</li>
+									<li>
+										Outer orbit diriven by VRR
+										<p>
+											$$
+											t_\mathrm{VRR} \sim \frac{P_\mathrm{out}}{N_\star} \frac{M_\bullet}{m_\star}
+											$$
+										</p>
+									</li>
+									<li>
+										Maximal enchantment when \(t_\mathrm{LK} \sim t_\mathrm{VRR}\)
+									</li>
+								</ul>
+
+							</div>
+							<div class="col-7">
+								<div class="container">
+									<div class="fragment fade-out abs" data-fragment-index="1" align="right">
+										<img src="./images/example_0_model3_ex_subindex_0.png" width="80%" alt="">
+									</div>
+									<div class="fragment current-visible  abs" data-fragment-index="1" align="right">
+										<img src="./images/example_1_model3_ex_subindex_0.png" width="80%" alt="">
+									</div>
+									<div class="fragment current-visible  abs" data-fragment-index="2" align="right">
+										<img src="./images/example_2_model3_ex_subindex_0.png" width="80%" alt="">
+									</div>
+									<div class="fragment abs" data-fragment-index="3" align="right">
+										<img src="./images/simple_R_f_enh_index_par1_0_index_par2_0_run02b_yscale_linear.png" width="80%" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section id="slide-25">
+					<h3>Vector Resonant Relaxation can randomize stellar disks</h3>
+					<div class="grid fig-title">
+						<div class="row">
+							<div class="col-5">
+								<ul>
+
+								</ul>
+
+							</div>
+							<div class="col-7">
+								<div class="container">
+									<div class="fragment fade-out abs" data-fragment-index="1" align="right">
+										<img src="./images/timescales.png" width="90%" alt="">
+									</div>
+									<div class="fragment fade-out abs" data-fragment-index="1" align="right">
+										<img src="./images/s_stars_times.png" width="90%" alt="">
+									</div>
+									<div class="fragment current-visible  abs" data-fragment-index="2" align="right">
+										<video loop data-autoplay data-src="./images/res_Neighbors_diffL_diffK_seed_2.mp4" type="video/mp4"></video>
+									</div>
+									<div class="fragment abs" data-fragment-index="3" align="right">
+										<video loop data-autoplay data-src="./images/res_Neighbors_diffL_sameK_kappa_2000_seed_2.mp4" type="video/mp4"></video>
 									</div>
 								</div>
 							</div>

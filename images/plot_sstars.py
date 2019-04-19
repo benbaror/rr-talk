@@ -74,7 +74,7 @@ if __name__ == '__main__':
 
     habibi_stars = s_stars[s_stars.age > 0]
 
-    ax.plot(disk.sma, disk.zms_age, 'o', label='CW disk stars', mec=None)
+    ax.plot(disk.sma, disk.zms_age, 'o', label='CW disk stars', mec=None, ms=10)
 
     # plt.plot(hills_stars.sma, hills_stars.zms_age, 'or', label='Hills stars',
     #          mec=None)
@@ -103,7 +103,7 @@ if __name__ == '__main__':
         ax.annotate(star, (params.sma, params.zms_age),
                      xytext=(params.sma*0.95,
                              params.zms_age*1.09),
-                     color='r',
+                     color='C4',
                      fontsize=6, zorder=10)
 
     ax.set_xlim(1e-4, 1.0)

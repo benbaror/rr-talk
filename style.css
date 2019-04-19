@@ -68,7 +68,7 @@ body {
     z-index: -1;
 }
 
-.fragment.abs{
+.abs{
     position: absolute;
     visibility: visible !important;
     top: 0;

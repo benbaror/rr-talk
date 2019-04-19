@@ -334,6 +334,7 @@ axes.labelcolor     : white
                       ## colorspecs: single letter, long name, or web-style hex
 					  ## Note the use of string escapes here ('1f77b4', instead of 1f77b4)
                       ## as opposed to the rest of this file.
+axes.prop_cycle    : cycler('color', ['348ABD', '7A68A6', 'A60628', '467821', 'CF4457', '188487', 'E24A33'])
 #axes.autolimit_mode : data ## How to scale axes limits to the data.
                             ## Use "data" to use data limits, plus some margin
                             ## Use "round_number" move to the nearest "round" number

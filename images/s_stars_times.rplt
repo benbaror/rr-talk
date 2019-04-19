@@ -25,7 +25,8 @@
 },
 "kwargs": {
 "label": "CW disk stars",
-"mec": null
+"mec": null,
+"ms": 10
 }
 },
 "002_errorbar": {
@@ -194,7 +195,7 @@
 ]
 },
 "kwargs": {
-"color": "r",
+"color": "C4",
 "fontsize": 6,
 "xytext": [
 0.02280020564634278,
@@ -212,7 +213,7 @@
 ]
 },
 "kwargs": {
-"color": "r",
+"color": "C4",
 "fontsize": 6,
 "xytext": [
 0.004809119006077343,
@@ -230,7 +231,7 @@
 ]
 },
 "kwargs": {
-"color": "r",
+"color": "C4",
 "fontsize": 6,
 "xytext": [
 0.013680123387805667,
@@ -248,7 +249,7 @@
 ]
 },
 "kwargs": {
-"color": "r",
+"color": "C4",
 "fontsize": 6,
 "xytext": [
 0.025191353263707132,
@@ -266,7 +267,7 @@
 ]
 },
 "kwargs": {
-"color": "r",
+"color": "C4",
 "fontsize": 6,
 "xytext": [
 0.015507971806848611,
@@ -284,7 +285,7 @@
 ]
 },
 "kwargs": {
-"color": "r",
+"color": "C4",
 "fontsize": 6,
 "xytext": [
 0.010438279021955921,
@@ -302,7 +303,7 @@
 ]
 },
 "kwargs": {
-"color": "r",
+"color": "C4",
 "fontsize": 6,
 "xytext": [
 0.011446086431197629,
@@ -320,7 +321,7 @@
 ]
 },
 "kwargs": {
-"color": "r",
+"color": "C4",
 "fontsize": 6,
 "xytext": [
 0.01012022573310778,
@@ -338,7 +339,7 @@
 ]
 },
 "kwargs": {
-"color": "r",
+"color": "C4",
 "fontsize": 6,
 "xytext": [
 0.010970922481593173,
@@ -356,7 +357,7 @@
 ]
 },
 "kwargs": {
-"color": "r",
+"color": "C4",
 "fontsize": 6,
 "xytext": [
 0.009116250291201593,
@@ -374,7 +375,7 @@
 ]
 },
 "kwargs": {
-"color": "r",
+"color": "C4",
 "fontsize": 6,
 "xytext": [
 0.019926230144702937,
@@ -392,7 +393,7 @@
 ]
 },
 "kwargs": {
-"color": "r",
+"color": "C4",
 "fontsize": 6,
 "xytext": [
 0.05019877209530932,
@@ -410,7 +411,7 @@
 ]
 },
 "kwargs": {
-"color": "r",
+"color": "C4",
 "fontsize": 6,
 "xytext": [
 0.009694877358865083,
@@ -428,7 +429,7 @@
 ]
 },
 "kwargs": {
-"color": "r",
+"color": "C4",
 "fontsize": 6,
 "xytext": [
 0.01640082019602472,
@@ -446,7 +447,7 @@
 ]
 },
 "kwargs": {
-"color": "r",
+"color": "C4",
 "fontsize": 6,
 "xytext": [
 0.01720553333648388,
@@ -464,7 +465,7 @@
 ]
 },
 "kwargs": {
-"color": "r",
+"color": "C4",
 "fontsize": 6,
 "xytext": [
 0.025176025394365056,
@@ -482,7 +483,7 @@
 ]
 },
 "kwargs": {
-"color": "r",
+"color": "C4",
 "fontsize": 6,
 "xytext": [
 0.036403689687438054,
@@ -500,7 +501,7 @@
 ]
 },
 "kwargs": {
-"color": "r",
+"color": "C4",
 "fontsize": 6,
 "xytext": [
 0.04598360802623754,
@@ -518,7 +519,7 @@
 ]
 },
 "kwargs": {
-"color": "r",
+"color": "C4",
 "fontsize": 6,
 "xytext": [
 0.014856537359810245,
@@ -536,7 +537,7 @@
 ]
 },
 "kwargs": {
-"color": "r",
+"color": "C4",
 "fontsize": 6,
 "xytext": [
 0.05755614937950732,
@@ -554,7 +555,7 @@
 ]
 },
 "kwargs": {
-"color": "r",
+"color": "C4",
 "fontsize": 6,
 "xytext": [
 0.04314795219795289,
@@ -572,7 +573,7 @@
 ]
 },
 "kwargs": {
-"color": "r",
+"color": "C4",
 "fontsize": 6,
 "xytext": [
 0.037285042174607604,
@@ -590,7 +591,7 @@
 ]
 },
 "kwargs": {
-"color": "r",
+"color": "C4",
 "fontsize": 6,
 "xytext": [
 0.057096313299244944,
@@ -608,7 +609,7 @@
 ]
 },
 "kwargs": {
-"color": "r",
+"color": "C4",
 "fontsize": 6,
 "xytext": [
 0.1049959049932424,
@@ -626,7 +627,7 @@
 ]
 },
 "kwargs": {
-"color": "r",
+"color": "C4",
 "fontsize": 6,
 "xytext": [
 0.07345881382191446,
@@ -644,7 +645,7 @@
 ]
 },
 "kwargs": {
-"color": "r",
+"color": "C4",
 "fontsize": 6,
 "xytext": [
 0.05744119035944173,
@@ -662,7 +663,7 @@
 ]
 },
 "kwargs": {
-"color": "r",
+"color": "C4",
 "fontsize": 6,
 "xytext": [
 0.08890164218405924,
@@ -680,7 +681,7 @@
 ]
 },
 "kwargs": {
-"color": "r",
+"color": "C4",
 "fontsize": 6,
 "xytext": [
 0.01586434476905195,
@@ -698,7 +699,7 @@
 ]
 },
 "kwargs": {
-"color": "r",
+"color": "C4",
 "fontsize": 6,
 "xytext": [
 0.0693586087729083,
@@ -716,7 +717,7 @@
 ]
 },
 "kwargs": {
-"color": "r",
+"color": "C4",
 "fontsize": 6,
 "xytext": [
 0.149446726085272,
