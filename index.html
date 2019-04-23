@@ -45,7 +45,8 @@
 					With Tal Alexander (WIS), Jean-Baptiste Fouvry (IAS) <br> and Pierre-Henri Chavanis (Toulouse)
 				</h4>
 			</section>
-			<section id="slide-orgheadline1">
+
+			<section id="slide-1">
 				<h2 id="orgheadline1">The Galactic center is a rich environment</h2>
 				<div class="grid">
 					<div class="row">
@@ -53,1076 +54,1190 @@
 							<ul>
 								<li>Extremely dense stellar system</li>
 								<li>We can observe individual stars</li>
-								<li>Observations indicate a Massive Black Hole
-									\(M=4\times10^{6}M_{\mathrm{sun}}\)</li>
-									<li>A “lab” for testing general relativity</li>
-									<li>Most of the stellar objects are unobservable</li>
-									<li>Opportunity for studying statistical physics of a stellar system</li>
-								</ul>
-							</div>
-							<div class="col-6 fig-title">
-								<div class="container">
-									<div class="fragment fade-out abs" data-fragment-index="1">
-										<div class="fragment grow abs" data-fragment-index="1">
-											<p width="80%">
-												<img src="./images/Schoedel07_f1.png" alt="Schoedel07_f1.png" width="80%" /> <br  />
-												Schödel et al. (2007)
-											</p>
-										</div>
-									</div>
-									<div class="fragment current-visible abs" data-fragment-index="1">
-										<p>
-											The S-stars cluster
-										</p>
-
-										<div class="figure">
-											<p><img src="./images/2013orbits_animfull.gif" alt="2013orbits_animfull.gif" width="90%" />
-											</p>
-										</div>
-									</div>
-									<div class="fragment current-visible abs" data-fragment-index="2">
-										<p>
-											Tidal disruption
-										</p>
-
-										<div class="figure">
-											<p><img src="./images/rxj1242_ill_300dpi.jpg" alt="rxj1242_ill_300dpi.jpg" width="100%" />
-											</p>
-										</div>
-									</div>
-									<div class="fragment current-visible abs" data-fragment-index="3">
-										<p>
-											Extreme mass ratio inspiral
-										</p>
-										<p width="130%">
-											<img src="./images/ordinaryinv.png" alt="ordinaryinv.png" width="130%" />
-											Steve Drasco &amp; Curt Cutler
-										</p>
-									</div>
-									<div class="fragment abs" data-fragment-index="4">
-										<video loop data-autoplay data-src="./images/nbody.mp4" type="video/mp4"></video>
-										<p>
-											\(N\)-body simulation (\(N=10^4\, t = 10^5 \mathrm{yr}\)) <br  />
-											Bar-Or et al. (2013)
+								<li>
+									Observations indicate a Massive Black Hole
+									\(M=4\times10^{6}M_{\mathrm{sun}}\)
+								</li>
+								<li>A “lab” for testing general relativity</li>
+								<li>Most of the stellar objects are unobservable</li>
+								<li>Opportunity for studying statistical physics of a stellar system</li>
+							</ul>
+						</div>
+						<div class="col-6 fig-title">
+							<div class="container">
+								<div class="fragment fade-out abs" data-fragment-index="1">
+									<div class="fragment grow abs" data-fragment-index="1">
+										<p width="80%">
+											<img src="./images/Schoedel07_f1.png" alt="Schoedel07_f1.png" width="80%" /> <br  />
+											Schödel et al. (2007)
 										</p>
 									</div>
 								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section id="slide-orgheadline2">
-					<h2 id="orgheadline2">\(N\)-body simulations are demanding</h2>
-					<div class="grid">
-						<div class="row">
-							<div class="col-6">
-								<ul>
-									<li>Large number of stars: \(N\sim M_{\bullet}/m_{\star}\)</li>
-									<li>Must include:
-										<ul>
-											<li>Direct \(N\) body summation (no-softening)</li>
-											<li>
-												Post-Newtonian terms up to 2.5 PN order. (Includes precession and
-												gravitational wave emission)
-											</li>
-
-										</ul>
-									</li>
-									<li>Large dynamical range:
-										<ul>
-											<li>Crossing time: \(t_{\mathrm{cross}}=R/\sigma\)</li>
-											<li>Relaxation time: \(t_{r}\approx0.34\sigma^{3}/\left(nG^{2}m_{\star}^{2}\log\Lambda\right)\)</li>
-											<li>Velocity dispersion: \(\sigma\sim\sqrt{GM_{\bullet}/R}\)</li>
-
-										</ul>
-									</li>
-
-								</ul>
-							</div>
-							<div class="col-6">
-								<div class='cite'>
+								<div class="fragment current-visible abs" data-fragment-index="1">
 									<p>
-										<img src="./images/mlawi.png" alt="mlawi.png" /> (Douglas Heggie)
+										The S-stars cluster
 									</p>
-								</div>
-								<p>
-									<br  />
-									\[t_{r}/t_{\mathrm{cross}}      \sim    \left(\frac{M_{\bullet}}{m_{\star}}\right)^{3/2}/\log\Lambda\]
-								</p>
 
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section id="slide-orgheadline3">
-					<h2 id="orgheadline3">Replacing the kinetics with <font color = "yellow">stochastics</font></h2>
-					<h3>
-						<p>
-							“Lies, damned lies, and <font color = "yellow">statistics</font>”
-						</p>
-					</h3>
-					<div class="grid">
-						<div class="row">
-							<div class="col-8">
-								<ul>
-									<li>Advantages</li>
-									<ul>
-										<li>Can describe large (realistic) systems</li>
-										<li>Can disentangle the different physical processes</li>
-										<li>Can lead to analytic description</li>
-
-									</ul>
-
-									<li>Limitations</li>
-									<ul>
-										<li>Assumes we understand the physics</li>
-										<li>Assumes the stochastic theory is reliable</li>
-										<li>No "new" physics</li>
-									</ul>
-									<li>
-										Alternatives: Effective \(N\)-body simulations
-										<br>
-										(see Madigan et al. (2011); Hamers et al. (2014);
-										Kocsis and Tremaine (2015); Fouvry, Bar-Or and Chavanis (2018))
-									</li>
-
-								</ul>
-							</div>
-							<div class="col-4">
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section id="slide-8">
-					<h3 id="orgheadline4"><font color = "yellow">Statistical mechanics</font> of stellar systems is challenging</h3>
-					<div class="grid">
-						<div class="row">
-							<div class="col-7">
-								<h4 style="text-align:left">
-									Commonly used <span style="color:yellow">Approximations:</span>
-								</h4>
-								<ul>
-									<li>Local interactions</li>
-									<li>Instantaneous interactions: Markovian <font color = "yellow">(uncorrelated)</font> process</li>
-									<li>Weak encounters: central limit</li>
-								</ul>
-								<div class="container">
-									<div class="fragment fade-out" data-fragment-index="2">
-										<h4 style="text-align:left">
-											Fokker-Plank equation
-										</h4>
-										<p>
-											$$\frac{\partial  P(\mathbf{v},t)}{\partial  t}
-											= \underset{\color{magenta}{\mathrm{diffuson}}}{\underbrace{\frac{1}{2}\frac{\partial  }{\partial  v_i}
-											\big[D_{ij} \frac{ \partial  P(\mathbf{v}, t)}{\partial  v_j}\big]}}
-											- \underset{\color{magenta}{\mathrm{dinamical\,\, friction}}}{\underbrace{\frac{\partial  }{\partial  v_i}
-											\big[D_{i}^{\mathrm{f}}  P(\mathbf{v}, t)\big]}}
-											$$
-										</p>
-										<ul>
-											<li>Random walk in velocities (energy and angular momentum)</li>
-											<li>Slow relaxation \(t_{\mathrm{relax}} \sim 10^{10}\,\mathrm{yr}\)</li>
-										</ul>
-									</div>
-									<div class="fragment abs" data-fragment-index="2">
-										<h4 style="text-align:left">
-											Landau equation
-										</h4>
-										<div style="font-size:1.0em">
-											$$
-											\frac{\partial }{\partial  t} P(\mathbf{v}, t) =
-											2G^2  \log\Lambda
-											\frac{\partial }{\partial  v_i} \int \mathrm{d} \mathbf{v}' u_{ij}(\mathbf{v}-\mathbf{v}')
-											\Bigg\{\underset{\color{magenta}{\mathrm{Diffusion}}}{\underbrace{m f(\mathbf{v}')\frac{\partial  P(\mathbf{v})}{\partial  v_j}}}
-											- \underset{\color{magenta}{\mathrm{Friction}}}{\underbrace{M P(\mathbf{v})\frac{\partial  f(\mathbf{v}')}{\partial  v'_j}}}\Bigg\}
-											$$
-										</div>
-										<p style="text-align:left">
-											Collision kernel:
-											$$
-											u_{ij}(\mathbf{w}) = \int \mathrm{d} \hat{\mathbf{k}} \hat{k}_i \hat{k}_j \Delta  (\hat{\mathbf{k}}\cdot \mathbf{w}) = \pi \frac{w^2 \Delta _{ij} - w_i w_j}{w^3}
-											$$
+									<div class="figure">
+										<p><img src="./images/2013orbits_animfull.gif" alt="2013orbits_animfull.gif" width="90%" />
 										</p>
 									</div>
 								</div>
-							</div>
-							<div class="col-5">
-								<div class="container">
-									<div class="fragment abs fade-out" data-fragment-index="1">
-										<img src="./images/2body.png" alt="">
-										Relaxation by two-body encounters
-									</div>
-									<div class="fragment abs current-visible" data-fragment-index="1">
-										<img width="120%" src="./images/dynamical_friction.png" alt=""/>
-										Dynamical friction
-									</div>
-									<div class="fragment abs" data-fragment-index="2">
-										<img width="70%" src="./images/dynamical_friction.png" alt=""/>
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</section>
-				<section id="slide-orgheadline5">
-					<h3 id="orgheadline5">\(2\)-body energy propagation: <font color = "yellow">Fokker-Planck</font></h3>
-					<div class="grid">
-						<div class="row">
-							<div class="col-6">
-								<ul>
-									<li>Master Equation
-										<div style="font-size:0.9em">
-											\(\frac{\partial}{\partial t}W_{E,J}(\Delta E,t)=\)
-											\(\int d\epsilon K_{E,J}(\epsilon)\left\{ W_{E,J}(\Delta E-\epsilon,t)-W_{E,J}(\Delta E,t)\right\}\)
-										</div>
-									</li>
-									<li>Jump probability \(K_{E,J}\left(\epsilon\right)\)</li>
-									<li>The Fokker-Planck assumption
-										<div style="font-size:0.9em">
-											(Taylor expansion up to second order in \(\epsilon\))
-											\(\frac{\partial}{\partial t}W_{E,J}(\Delta
-											E,t)=\)
-											\(\frac{1}{2}\frac{\partial^{2}}{\partial\Delta E^{2}}
-											\left\langle \epsilon^{2}\right\rangle W_{E,J}(\Delta E,t)
-											-\frac{\partial}{\partial\Delta E}\left\langle
-											\epsilon\right\rangle W_{E,J}(\Delta E,t)\)
-										</div>
-									</li>
-									<li>Diffusion coefficients:
-										\(\left\langle \epsilon^{2}\right\rangle ,\left\langle \epsilon\right\rangle \propto\log\Lambda\)
-									</li>
-									<li>Solution for a delta function at \(t=0\) (i.e. Propagator)</li>
-
-								</ul>
-							</div>
-							<div class="col-6">
-								<div class="container">
-									<div class="fragment fade-out abs" data-fragment-index="1">
-										<p width="1000%">
-											<img src="./images/DE_FP_no_data.png" alt="DE_FP_no_data.png" width="1000%" />
-											\[\color{green}{W_{E,J}^{\mathrm{FP}}(\Delta E,t)=\frac{1}{\sqrt{2\pi\sigma^{2}}}e^{-\frac{\Delta E{}^{2}}{2\sigma^{2}}}}\]
-											<font color = "yellow">Normal</font> diffusion:
-											\(\color{yellow}{\sigma\propto\sqrt{t\log\Lambda}}\)
-										</p>
-									</div>
-									<div class="fragment abs" data-fragment-index="1">
-										<p width="1000%">
-											<img src="./images/DE_FP.png" alt="DE_FP.png" width="1000%" />
-											\[\color{green}{W_{E,J}^{\mathrm{FP}}(\Delta E,t)=\frac{1}{\sqrt{2\pi\sigma^{2}}}e^{-\frac{\Delta E{}^{2}}{2\sigma^{2}}}}\]
-											<font color = "yellow">Normal</font> diffusion:
-											\(\color{yellow}{\sigma\propto\sqrt{t\log\Lambda}}\)
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-
-				<section id="slide-orgheadline6">
-					<h3 id="orgheadline6">\(2\)-body energy propagation: <font color = "yellow">Heavy Tail</font></h3>
-					<div class="grid">
-						<div class="row">
-							<div class="col-6">
-								<ul>
-									<li>
-										Master Equation
-										<div style="font-size:0.9em">
-											\(\frac{\partial}{\partial t}W_{E,J}(\Delta E,t)=\)
-											\(\int d\epsilon K_{E,J}(\epsilon)\left\{ W_{E,J}(\Delta E-\epsilon,t)-W_{E,J}(\Delta E,t)\right\}\)
-										</div>
-									</li>
-									<li>
-										<font color = "yellow">Heavy tailed</font> Jump probability \(K_{E,J}(\Delta E)\propto\left|\Delta
-										E\right|^{-3}\)
-										(Goodman 1983)
-									</li>
-									<li>
-										Fourier transform:
-										<div style="font-size:0.9em">
-											\(\frac{\partial}{\partial  t}\tilde{W}_{E,J}(k,t)=\)
-											\(-\tilde{K}_{E,J}(k)\tilde{W}_{E,J}(k,t)+\tilde{K}_{E,J}(0)\tilde{W}_{E,J}(k,t)\)
-										</div>
-									</li>
-									<li>
-										Propagator: \(W_{E,J}(\Delta E,t)=\int_{-\infty}^{\infty}\frac{dk}{2\pi}e^{ik\Delta E}e^{\left(\tilde{K}_{E,J}(k)-\tilde{K}_{E,J}(0)\right)t}\)
-									</li>
-								</ul>
-							</div>
-							<div class="col-6">
-								<div class="container">
-									<div class="fragment fade-out abs" data-fragment-index="1">
-
-										<div class="figure">
-											<p>
-												<img src="./images/DE_FP.png" alt="DE_FP.png" width="1000%" />
-											</p>
-										</div>
-									</div>
-									<div class="fragment abs" data-fragment-index="1">
-										<p width="1000%">
-											<img src="./images/DE_all.png" alt="DE_all.png" width="1000%" />
-											\[\color{red}{W_{E,J}(\Delta E,t)}=\color{blue}{\frac{1}{\sqrt{2\pi\sigma^{2}}} e^{-\frac{\Delta E^{2}}{2\sigma^{2}}}} + \mathrm{\color{red}{Heavy\,Tail}}\]
-											<font color = "yellow">Anomalous</font> diffusion:
-											\(\color{yellow}{\sigma\propto\sqrt{t\log(t\Lambda/t_E)}}\)
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section id="slide-orgheadline7">
-					<h3 id="orgheadline7"><font color = "yellow">Anomalous</font> diffusion</h3>
-					<p width="65%">
-						<img src="./images/corr_example.png" alt="corr_example.png" width="65%" />
-						<br  />
-						<font color = "yellow">Anomalous</font> diffusion:
-						\(\color{yellow}{\sigma^{2}\sim
-						t\log\left(\Lambda t/t_{E}\right)}\)
-						<br>
-						Normal diffusion: \(\sigma^{2}\sim t\log\left(\Lambda\right)\)
-					</p>
-				</section>
-
-				<section id="slide-orgheadline8">
-					<h3 id="orgheadline8"><font color = "yellow">Measuring</font> \(2\)-body relaxation</h3>
-					<p width="60%">
-						<img src="./images/fm_fit.png" alt="fm_fit.png" width="60%" />
-						\[\sigma_{\Delta E/E}^{2}=\lim_{\delta\to0}\frac{\langle|\Delta E/E|^{\delta}\rangle^{2/\delta}}{2\pi^{-1/\delta}\Gamma\left(\frac{1+\delta}{2}\right)^{2/\delta}}\]
-					</p>
-				</section>
-
-				<section id="slide-orgheadline9">
-					<h3 id="orgheadline9">Long-time <font color = "yellow">correlations</font> are important</h3>
-					<div class="grid">
-						<div class="row">
-							<div class="col-6">
-								<h4 align="left">
+								<div class="fragment current-visible abs" data-fragment-index="2">
 									<p>
-										<font color = "yellow">Resonant Relaxation</font> (Rauch &amp; Tremaine 1996):
+										Tidal disruption
 									</p>
-								</h4>
-								<ul>
-									<li>Stochastic residual torques \(\dot{J} \propto\sqrt{N}\)</li>
-									<li>
-										Short timescales (\(P < t < T_\mathrm{coh}\)): <br>
-										angular momentum changes coherently
-									</li>
-									<li>
-										Longer timescales (\(t > T_\mathrm{coh}\)): <br>
-										random walk in angular momentum
-									</li>
-									<li>Relaxation can be fast: \(T_{RR} \ll T_{\mathrm{relax}}\)</li>
 
-								</ul>
-								<div class="col-10">
-									<div class="container">
-										<div class="fragment fade-out abs" data-fragment-index="2">
-											<div class="figure">
-												<p>
-													<img src="./images/2body.png" alt="2body.png" width="60%" />
-												</p>
-											</div>
-										</div>
-										<div class="fragment abs" data-fragment-index="2">
-											<div class="figure">
-												<p>
-													<img src="./images/mass_wires.png" alt="mass_wires.png" />
-												</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-6 fig-title">
-								<div class="container">
-									<div class="fragment fade-out abs" data-fragment-index="1">
-										<video width="90%" poster="./images/nbody.png"></video>
-										<p>
-											\(N\)-body simulation (\(N=10^4\, t = 10^5 \mathrm{yr}\)) <br>
-											Bar-Or et al. (2013)
-										</p>
-									</div>
-									<div class="fragment current-visible abs" data-fragment-index="1">
-										<video loop data-autoplay data-src="./images/nbody.mp4" type="video/mp4"></video>
-										<p>
-											\(N\)-body simulation (\(N=10^4\, t = 10^5 \mathrm{yr}\)) <br>
-											Bar-Or et al. (2013)
-										</p>
-									</div>
-									<div class="fragment abs" data-fragment-index="2">
-										<video class="fragment" data-fragment-index="2" data-src="./images/nwires.mp4" type="video/mp4"></video>
-										<p>
-											\(N\)-body simulation (\(N=10^4\, t = 10^5 \mathrm{yr}\)) <br>
-											Bar-Or et al. (2013)
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-
-				<section id="slide-orgheadline10">
-					<h3 id="orgheadline10">Key question: How to describe <font color = "yellow">resonant relaxation</font>?</h3>
-					<div class="grid">
-						<div class="row">
-							<div class="col-6">
-								<p>
-									<h4 align="left">
-										Challenges:
-									</h4>
-								</p>
-								<ul>
-									<li>Long range interactions</li>
-									<li>Long time <font color = "yellow">correlations</font></li>
-									<li>Multiple timescales: <font color = "yellow">correlated</font> process</li>
-
-								</ul>
-								<p>
-									<h4 align="left">
-										Description by a <font color = "yellow">diffusion</font> equation?
-									</h4>
-									<div style="text-align:left; font-size:0.8em">
-										(Rauch &amp; Tremaine 1996)
-									</div>
-								</p>
-								<div class="col-10">
 									<div class="figure">
 										<p>
-											<img src="./images/mass_wires.png" alt="mass_wires.png" width="100%" />
+											<img src="./images/rxj1242_ill_300dpi.jpg" alt="rxj1242_ill_300dpi.jpg" width="100%" />
 										</p>
 									</div>
 								</div>
+								<div class="fragment current-visible abs" data-fragment-index="3">
+									<p>
+										Extreme mass ratio inspiral
+									</p>
+									<p width="130%">
+										<img src="./images/ordinaryinv.png" alt="ordinaryinv.png" width="130%" />
+										Steve Drasco &amp; Curt Cutler
+									</p>
+								</div>
+								<div class="fragment abs" data-fragment-index="4">
+									<video loop data-autoplay data-src="./images/nbody.mp4" type="video/mp4"></video>
+									<p>
+										\(N\)-body simulation (\(N=10^4\, t = 10^5 \mathrm{yr}\)) <br  />
+										Bar-Or et al. (2013)
+									</p>
+								</div>
 							</div>
-							<div class="col-6 fig-title">
-								<video loop data-autoplay data-src="./images/nwires.mp4" type="video/mp4"></video>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="slide-2">
+				<h2 id="orgheadline2">\(N\)-body simulations are demanding</h2>
+				<div class="grid">
+					<div class="row">
+						<div class="col-6">
+							<ul>
+								<li>Large number of stars: \(N\sim M_{\bullet}/m_{\star}\)</li>
+								<li>Must include:
+									<ul>
+										<li>Direct \(N\) body summation (no-softening)</li>
+										<li>
+											Post-Newtonian terms up to 2.5 PN order. (Includes precession and
+											gravitational wave emission)
+										</li>
+
+									</ul>
+								</li>
+								<li>Large dynamical range:
+									<ul>
+										<li>Crossing time: \(t_{\mathrm{cross}}=R/\sigma\)</li>
+										<li>Relaxation time: \(t_{r}\approx0.34\sigma^{3}/\left(nG^{2}m_{\star}^{2}\log\Lambda\right)\)</li>
+										<li>Velocity dispersion: \(\sigma\sim\sqrt{GM_{\bullet}/R}\)</li>
+
+									</ul>
+								</li>
+
+							</ul>
+						</div>
+						<div class="col-6">
+							<div class='cite'>
 								<p>
-									\(N\)-body simulation (\(N=10^4,\, t = 10^5 \mathrm{yr}\)) <br >
-									Bar-Or et al. (2013)
+									<img src="./images/mlawi.png" alt="mlawi.png" /> (Douglas Heggie)
 								</p>
 							</div>
+							<p>
+								<br  />
+								\[t_{r}/t_{\mathrm{cross}}      \sim    \left(\frac{M_{\bullet}}{m_{\star}}\right)^{2}/\log\Lambda\]
+							</p>
+
 						</div>
 					</div>
+				</div>
+			</section>
 
-				</section>
-
-				<section id="slide-orgheadline11">
-					<h3 id="orgheadline11"><font color = "yellow">Kinetic theory</font></h3>
-					<div class="grid">
-						<div class="row">
-							<div class="col-7">
+			<section id="slide-3">
+				<h2 id="orgheadline3">Replacing the kinetics with <font color = "yellow">stochastics</font></h2>
+				<h3>
+					<p>
+						“Lies, damned lies, and <font color = "yellow">statistics</font>”
+					</p>
+				</h3>
+				<div class="grid">
+					<div class="row">
+						<div class="col-8">
+							<ul>
+								<li>Advantages</li>
 								<ul>
-									<li>
-										Orbit Averaged potential:
-										\[U\left(a,e,\theta,\phi,\psi,\color{yellow}{t}\right)=\sum_{k=1}^{N}\int\frac{dw}{2\pi}\int\frac{dw_{k}}{2\pi}\frac{GM_{\star}}{\left|\mathbf{r}-\color{yellow}{\mathbf{r}_{k}\left(t\right)}\right|}\]
-									</li>
-									<li>
-										Potential expansion:
-										\[U\left(a,e,\theta,\phi,\psi,t\right)=\sum_{l=0}^{\infty}\sum_{m=-l}^{l}\sum_{n=-l}^{l}D_{nm}^{l}\left(\psi,\theta,\phi\right)\color{yellow}{\eta_{nm}^{l}\left(a,e,t\right)}\]
-									</li>
-									<li>
-										Relativistic (\(l=1\)) Hamiltonian:
-										\[H_{\eta}=-j\nu_{GR}\left(j\right)J_{c}+\tau_{N}(j)\hat{e}_{\psi}(\phi,\theta,\psi)\cdot\color{yellow}{\boldsymbol{\eta}\left(t\right)}\]
-									</li>
-									<li>
-										<font color = "yellow">Stochastic</font> Equations of motion:
-										\[\dot{\boldsymbol{J}}=-\tau_{N}\left(J\right)\hat{e}_{\psi}\left(\phi,\theta,\psi\right)\times\color{yellow}{\boldsymbol{\eta}\left(t\right)}\]
-										\[\dot{\psi}=\nu_{GR}\left(j\right)+\frac{\tau_{N}\left(J\right)}{J}\left[\frac{\partial\log\tau_{N}\left(J\right)}{\partial\log J}\hat{e}_{\psi}\left(\phi,\theta,\psi\right)-\frac{J_{z}\cos\psi}{\sqrt{J^{2}-J_{z}^{2}}}\hat{e}_{J}\left(\phi,\theta,\psi\right)\right]\cdot\color{yellow}{\boldsymbol{\eta}\left(t\right)}\]
-									</li>
-
-								</ul>
-							</div>
-							<div class="col-6">
-
-								<div class="figure">
-									<p><img src="./images/Ylm_Dnlm_blackbg.png" alt="Ylm_Dnlm_blackbg.png" width="100%" />
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-
-				<section id="slide-orgheadline13">
-					<h3 id="orgheadline13">The <font color = "yellow">Stochastic</font> approach</h3>
-					<div class="grid">
-						<div class="row">
-							<div class="col-7">
-								<ul>
-									<li>
-										Stochastic Equations of motion:
-										\[\dot{\boldsymbol{J}}=-\tau_N(J)\hat{e}_\psi(\phi,\theta,\psi)\times\color{yellow}{\boldsymbol{\eta}(t)}\]
-										\[\dot{\psi}=\nu_{GR}(j)+[\dots]\cdot\color{yellow}{\boldsymbol{\eta}(t)}\]
-									</li>
-									<li>
-										Torque magnitude: \(\tau_{N}\propto(\sqrt{N(a)}/Q)J_{c}\)
-									</li>
-									<li>
-										Markovian approximation - <font color = "yellow">uncorrelated</font> noise:
-										\[\left\langle \eta_{i}(t)\eta_j(t^\prime)\right\rangle
-										=\delta_{ij}\delta((t-t^\prime)/T_\mathrm{coh})\]
-									</li>
+									<li>Can describe large (realistic) systems</li>
+									<li>Can disentangle the different physical processes</li>
+									<li>Can lead to analytic description</li>
 
 								</ul>
 
-								<div class="figure">
+								<li>Limitations</li>
+								<ul>
+									<li>Assumes we understand the physics</li>
+									<li>Assumes the stochastic theory is reliable</li>
+									<li>No "new" physics</li>
+								</ul>
+								<li>
+									Alternatives: Effective \(N\)-body simulations
+									<br>
+									(see Madigan et al. (2011); Hamers et al. (2014);
+									Kocsis and Tremaine (2015); Fouvry, Bar-Or and Chavanis (2018))
+								</li>
+
+							</ul>
+						</div>
+						<div class="col-4">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="slide-4">
+				<h3 id="orgheadline4"><font color = "yellow">Statistical mechanics</font> of stellar systems is challenging</h3>
+				<div class="grid">
+					<div class="row">
+						<div class="col-7">
+							<h4 style="text-align:left">
+								Commonly used <span style="color:yellow">Approximations:</span>
+							</h4>
+							<ul>
+								<li>Local interactions</li>
+								<li>Instantaneous interactions: Markovian <font color = "yellow">(uncorrelated)</font> process</li>
+								<li>Weak encounters: central limit</li>
+							</ul>
+							<div class="container">
+								<div class="fragment fade-out" data-fragment-index="2">
+									<h4 style="text-align:left">
+										Fokker-Plank equation
+									</h4>
 									<p>
-										<img src="./images/Ylm_Dnlm_blackbg.png" alt="Ylm_Dnlm_blackbg.png" width="100%" />
+										$$\frac{\partial  P(\mathbf{v},t)}{\partial  t}
+										= \underset{\color{magenta}{\mathrm{diffuson}}}{\underbrace{\frac{1}{2}\frac{\partial  }{\partial  v_i}
+										\big[D_{ij} \frac{ \partial  P(\mathbf{v}, t)}{\partial  v_j}\big]}}
+										- \underset{\color{magenta}{\mathrm{dinamical\,\, friction}}}{\underbrace{\frac{\partial  }{\partial  v_i}
+										\big[D_{i}^{\mathrm{f}}  P(\mathbf{v}, t)\big]}}
+										$$
 									</p>
+									<ul>
+										<li>Random walk in velocities (energy and angular momentum)</li>
+										<li>Slow relaxation \(t_{\mathrm{relax}} \sim 10^{10}\,\mathrm{yr}\)</li>
+									</ul>
 								</div>
-							</div>
-							<div class="col-6">
-								<div class="large-video">
-									<video loop data-autoplay data-src="./images/nrings.mp4" type="video/mp4"></video>
-								</div>
-								<p>
-									\(N\)-ring simulation
-								</p>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section id="slide-orgheadline14">
-					<h3 id="orgheadline14">Resonant relaxation can be <br> <font color = "yellow">extremely efficient</font></h3>
-					<div class="grid">
-						<div class="row">
-							<div class="col-6">
-								<ul>
-									<li>Random walk in phase space</li>
-									<li>Much faster than \(2\)-body relaxation</li>
-									<li><font color = "yellow">All stars will plunge into the massive black hole</font></li>
-									<li>General relativity is not included</li>
-								</ul>
-
-								<div class="figure">
-									<p>
-										<img src="./images/Jorbit.png" alt="Jorbit.png" width="80%" />
-									</p>
-								</div>
-							</div>
-							<div class="col-6 fig-title">
-								<div class="container">
-									<div class="fragment fade-out abs" data-fragment-index="1">
-										<p width="100%">
-											<img src="./images/j_a_noRR.png" alt="j_a_noRR.png" width="100%" />
-											Monte Carlo simulations: \(2\)-body only<br>
-											(Bar-Or and Alexander, 2016)
-										</p>
+								<div class="fragment abs" data-fragment-index="2">
+									<h4 style="text-align:left">
+										Landau equation
+									</h4>
+									<div style="font-size:1.0em">
+										$$
+										\frac{\partial }{\partial  t} P(\mathbf{v}, t) =
+										2G^2  \log\Lambda
+										\frac{\partial }{\partial  v_i} \int \mathrm{d} \mathbf{v}' u_{ij}(\mathbf{v}-\mathbf{v}')
+										\Bigg\{\underset{\color{magenta}{\mathrm{Diffusion}}}{\underbrace{m f(\mathbf{v}')\frac{\partial  P(\mathbf{v})}{\partial  v_j}}}
+										- \underset{\color{magenta}{\mathrm{Friction}}}{\underbrace{M P(\mathbf{v})\frac{\partial  f(\mathbf{v}')}{\partial  v'_j}}}\Bigg\}
+										$$
 									</div>
-									<div class="fragment abs" data-fragment-index="1">
+									<p style="text-align:left">
+										Collision kernel:
+										$$
+										u_{ij}(\mathbf{w}) = \int \mathrm{d} \hat{\mathbf{k}} \hat{k}_i \hat{k}_j \Delta  (\hat{\mathbf{k}}\cdot \mathbf{w}) = \pi \frac{w^2 \Delta _{ij} - w_i w_j}{w^3}
+										$$
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-5">
+							<div class="container">
+								<div class="fragment abs fade-out" data-fragment-index="1">
+									<img src="./images/2body.png" alt="">
+									Relaxation by two-body encounters
+								</div>
+								<div class="fragment abs current-visible" data-fragment-index="1">
+									<img width="120%" src="./images/dynamical_friction.png" alt=""/>
+									Dynamical friction
+								</div>
+								<div class="fragment abs" data-fragment-index="2">
+									<img width="70%" src="./images/dynamical_friction.png" alt=""/>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+			<section id="slide-5">
+				<h3 id="orgheadline5">\(2\)-body energy propagation: <font color = "yellow">Fokker-Planck</font></h3>
+				<div class="grid">
+					<div class="row">
+						<div class="col-6">
+							<ul>
+								<li>Master Equation
+									<div style="font-size:0.9em">
+										\(\frac{\partial}{\partial t}W_{E,J}(\Delta E,t)=\)
+										\(\int d\epsilon K_{E,J}(\epsilon)\left\{ W_{E,J}(\Delta E-\epsilon,t)-W_{E,J}(\Delta E,t)\right\}\)
+									</div>
+								</li>
+								<li>Jump probability \(K_{E,J}\left(\epsilon\right)\)</li>
+								<li>The Fokker-Planck assumption
+									<div style="font-size:0.9em">
+										(Taylor expansion up to second order in \(\epsilon\))
+										\(\frac{\partial}{\partial t}W_{E,J}(\Delta
+										E,t)=\)
+										\(\frac{1}{2}\frac{\partial^{2}}{\partial\Delta E^{2}}
+										\left\langle \epsilon^{2}\right\rangle W_{E,J}(\Delta E,t)
+										-\frac{\partial}{\partial\Delta E}\left\langle
+										\epsilon\right\rangle W_{E,J}(\Delta E,t)\)
+									</div>
+								</li>
+								<li>Diffusion coefficients:
+									\(\left\langle \epsilon^{2}\right\rangle ,\left\langle \epsilon\right\rangle \propto\log\Lambda\)
+								</li>
+								<li>Solution for a delta function at \(t=0\) (i.e. Propagator)</li>
+
+							</ul>
+						</div>
+						<div class="col-6">
+							<div class="container">
+								<div class="fragment fade-out abs" data-fragment-index="1">
+									<p width="1000%">
+										<img src="./images/DE_FP_no_data.png" alt="DE_FP_no_data.png" width="1000%" />
+										\[\color{green}{W_{E,J}^{\mathrm{FP}}(\Delta E,t)=\frac{1}{\sqrt{2\pi\sigma^{2}}}e^{-\frac{\Delta E{}^{2}}{2\sigma^{2}}}}\]
+										<font color = "yellow">Normal</font> diffusion:
+										\(\color{yellow}{\sigma\propto\sqrt{t\log\Lambda}}\)
+									</p>
+								</div>
+								<div class="fragment abs" data-fragment-index="1">
+									<p width="1000%">
+										<img src="./images/DE_FP.png" alt="DE_FP.png" width="1000%" />
+										\[\color{green}{W_{E,J}^{\mathrm{FP}}(\Delta E,t)=\frac{1}{\sqrt{2\pi\sigma^{2}}}e^{-\frac{\Delta E{}^{2}}{2\sigma^{2}}}}\]
+										<font color = "yellow">Normal</font> diffusion:
+										\(\color{yellow}{\sigma\propto\sqrt{t\log\Lambda}}\)
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="slide-6">
+				<h3 id="orgheadline6">\(2\)-body energy propagation: <font color = "yellow">Heavy Tail</font></h3>
+				<div class="grid">
+					<div class="row">
+						<div class="col-6">
+							<ul>
+								<li>
+									Master Equation
+									<div style="font-size:0.9em">
+										\(\frac{\partial}{\partial t}W_{E,J}(\Delta E,t)=\)
+										\(\int d\epsilon K_{E,J}(\epsilon)\left\{ W_{E,J}(\Delta E-\epsilon,t)-W_{E,J}(\Delta E,t)\right\}\)
+									</div>
+								</li>
+								<li>
+									<font color = "yellow">Heavy tailed</font> Jump probability \(K_{E,J}(\Delta E)\propto\left|\Delta
+									E\right|^{-3}\)
+									(Goodman 1983)
+								</li>
+								<li>
+									Fourier transform:
+									<div style="font-size:0.9em">
+										\(\frac{\partial}{\partial  t}\tilde{W}_{E,J}(k,t)=\)
+										\(-\tilde{K}_{E,J}(k)\tilde{W}_{E,J}(k,t)+\tilde{K}_{E,J}(0)\tilde{W}_{E,J}(k,t)\)
+									</div>
+								</li>
+								<li>
+									Propagator: \(W_{E,J}(\Delta E,t)=\int_{-\infty}^{\infty}\frac{dk}{2\pi}e^{ik\Delta E}e^{\left(\tilde{K}_{E,J}(k)-\tilde{K}_{E,J}(0)\right)t}\)
+								</li>
+							</ul>
+						</div>
+						<div class="col-6">
+							<div class="container">
+								<div class="fragment fade-out abs" data-fragment-index="1">
+
+									<div class="figure">
 										<p>
-											<img src="./images/j_a_NRR.png" alt="j_a_NRR.png" />
-											Monte Carlo simulations: with resonant relaxation <br>
-											(Bar-Or and Alexander, 2016)
+											<img src="./images/DE_FP.png" alt="DE_FP.png" width="1000%" />
 										</p>
 									</div>
 								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section id="slide-orgheadline15">
-					<h3 id="orgheadline15"><font color = "yellow">Relativistic</font> stars precess fast</h3>
-					<div class="grid">
-						<div class="row">
-							<div class="col-6">
-								<ul>
-									<li>
-										Precession frequency diverges with eccentricity
-										\[\color{yellow}{\nu_{GR}(j)}=3\frac{J_c^2}{J^{2}}\frac{r_{g}}{a}\nu_{r}\left(a\right)\]
-									</li>
-								</ul>
-
-								<div class="figure">
-									<p>
-										<img src="./images/prec.png" alt="prec.png" width="70%" />
+								<div class="fragment abs" data-fragment-index="1">
+									<p width="1000%">
+										<img src="./images/DE_all.png" alt="DE_all.png" width="1000%" />
+										\[\color{red}{W_{E,J}(\Delta E,t)}=\color{blue}{\frac{1}{\sqrt{2\pi\sigma^{2}}} e^{-\frac{\Delta E^{2}}{2\sigma^{2}}}} + \mathrm{\color{red}{Heavy\,Tail}}\]
+										<font color = "yellow">Anomalous</font> diffusion:
+										\(\color{yellow}{\sigma\propto\sqrt{t\log(t\Lambda/t_E)}}\)
 									</p>
 								</div>
 							</div>
-							<div class="col-6 fig-title">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="slide-7">
+				<h3 id="orgheadline7"><font color = "yellow">Anomalous</font> diffusion</h3>
+				<p width="65%">
+					<img src="./images/corr_example.png" alt="corr_example.png" width="65%" />
+					<br  />
+					<font color = "yellow">Anomalous</font> diffusion:
+					\(\color{yellow}{\sigma^{2}\sim
+					t\log\left(\Lambda t/t_{E}\right)}\)
+					<br>
+					Normal diffusion: \(\sigma^{2}\sim t\log\left(\Lambda\right)\)
+				</p>
+			</section>
+
+			<section id="slide-8">
+				<h3 id="orgheadline8"><font color = "yellow">Measuring</font> \(2\)-body relaxation</h3>
+				<p width="60%">
+					<img src="./images/fm_fit.png" alt="fm_fit.png" width="60%" />
+					\[\sigma_{\Delta E/E}^{2}=\lim_{\delta\to0}\frac{\langle|\Delta E/E|^{\delta}\rangle^{2/\delta}}{2\pi^{-1/\delta}\Gamma\left(\frac{1+\delta}{2}\right)^{2/\delta}}\]
+				</p>
+			</section>
+
+			<section id="slide-9">
+				<h3 id="orgheadline9">Long-time <font color = "yellow">correlations</font> are important</h3>
+				<div class="grid">
+					<div class="row">
+						<div class="col-6">
+							<h4 align="left">
 								<p>
-									S2
+									<font color = "yellow">Resonant Relaxation</font> (Rauch &amp; Tremaine 1996):
 								</p>
-								<p width="50%">
-									<img src="./images/gill09f3.png" alt="gill09f3.png" width="50%" /> <br>
-									Ghez et al. (2008), Gillessen et al. (2009)
-									\[T_{GR}\approx2\times10^{3}P\]
-								</p>
-							</div>
-						</div>
-					</div>
-				</section>
+							</h4>
+							<ul>
+								<li>Stochastic residual torques \(\dot{J} \propto\sqrt{N}\)</li>
+								<li>
+									Short timescales (\(P < t < T_\mathrm{coh}\)): <br>
+									angular momentum changes coherently
+								</li>
+								<li>
+									Longer timescales (\(t > T_\mathrm{coh}\)): <br>
+									random walk in angular momentum
+								</li>
+								<li>Relaxation can be fast: \(T_{RR} \ll T_{\mathrm{relax}}\)</li>
 
-
-				<section id="slide-orgheadline16">
-					<h3 id="orgheadline16"><font color = "yellow">General relativistic</font> effects restrict the relaxation</h3>
-					<div class="grid">
-						<div class="row">
-							<div class="col-6">
-								<ul>
-									<li>Restricted random walk in phase space</li>
-									<li><font color = "yellow">Protection against direct plunges</font></li>
-								</ul>
-								<div class='citel'>
-									<p>
-										(Hopman &amp; Alexander 2006)
-									</p>
-								</div>
-								<ul>
-									<li>Emission of gravitational waves</li>
-									<li>Demonstrated in \(N\)-body simulations</li>
-
-								</ul>
-								<div class='citel'>
-									<p>
-										(Merritt et al. 2011, Brem et al. 2014)
-									</p>
-								</div>
-							</div>
-							<div class="col-6 fig-title">
+							</ul>
+							<div class="col-10">
 								<div class="container">
-									<p width="100%">
-										<img src="./images/j_a_rel.png" alt="j_a_rel.png" width="100%" />
-										Post-Newtonian \(N\)-body simulation (\(N=50\)) <br>
-										Kupi and Alexander (2012)
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section id="slide-orgheadline17">
-					<h3 id="orgheadline17">Key question: How to describe <br> <font color = "yellow">relativistic</font> resonant relaxation?</h3>
-					<div class="grid">
-						<div class="row">
-							<div class="col-6">
-								<h4 align="left">
-									<p>
-										Challenges:
-									</p>
-								</h4>
-								<ul>
-									<li>Long range interactions &#10004;</li>
-									<li>Long time <font color = "yellow">correlations</font></li>
-									<li>Multiple timescales: <font color = "yellow">correlated</font> process
-										<ul>
-											<li>Non-relativistic orbits: \(2\pi/\nu_{GR} \gg T_\mathrm{coh}\)</li>
-											<li>Relativistic orbits: \(2\pi/\nu_{GR} \ll T_\mathrm{coh}\)</li>
-
-										</ul>
-									</li>
-								</ul>
-								<h4 align="left">
-									<p>
-										Description by a <font color = "yellow">diffusion</font> equation?
-									</p>
-								</h4>
-							</div>
-							<div class="col-6">
-								<h4  align="left">
-									<p>
-										Relativistic precession
-									</p>
-								</h4>
-								<p>
-									Precession frequency diverges with eccentricity
-									\[\color{yellow}{\nu_{GR}(j)}=3\frac{J_c^2}{J^{2}}\frac{r_{g}}{a}\nu_{r}\left(a\right)\]
-								</p>
-
-								<div class="figure">
-									<p>
-										<img src="./images/prec.png" alt="prec.png" width="50%" />
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section id="slide-orgheadline18">
-					<h3 id="orgheadline18">Stochastic equations of motion with <font color = "yellow">correlated</font> noise</h3>
-					<div class="grid">
-						<div class="row">
-							<div class="col-6 fig-title">
-								<ul>
-									<li>
-										Stochastic Equations of motion:
-										\[\dot{\boldsymbol{J}}=-\tau_N(J)\hat{e}_\psi(\phi,\theta,\psi)\times\color{yellow}{\boldsymbol{\eta}(t)}\]
-									</li>
-									<li>
-										<font color = "yellow">Correlated</font> noise:
-										\[\left\langle \eta_{i}(t)\eta_j(t^\prime)\right\rangle
-										=\delta_{ij}C((t-t^\prime)/T_\mathrm{coh})\]
-									</li>
-
-								</ul>
-								<video loop data-autoplay data-src="./images/noise.mp4" type="video/mp4"></video>
-								<p>
-									Noise models
-								</p>
-							</div>
-							<div class="col-6 fig-title">
-								<p>
-									Power spectrum
-									<img src="./images/acf_ft_L.png" alt="acf_ft_L.png" /><br>
-									Bar-Or and Alexander (2014)
-								</p>
-							</div>
-						</div>
-					</div>
-
-				</section>
-
-				<section id="slide-orgheadline19">
-					<h3 id="orgheadline19">Resonant relaxation can be described by an effective <font color = "yellow">diffusion equation</font></h3>
-					<div class="grid">
-						<div class="row">
-							<div class="col-6">
-								<ul>
-									<li>
-										The \(\mathbf{\eta}\)-formalism: Stellar background as
-										<font color = "yellow">correlated noise</font>
-										\[\dot{\boldsymbol{J}}=-\tau_N(J)\hat{e}_\psi(\phi,\theta,\psi)\times\color{yellow}{\boldsymbol{\eta}(t)}\]
-									</li>
-									<li>Effective <font color = "yellow">Fokker-Planck</font> (diffusion) equation</li>
-									<li>
-										<font color = "yellow">Noise dependent</font> diffusion coefficient:
-										\[ D_2(j) \propto\color{yellow}{{S_\eta}{\color{yellow}(\nu_{GR}(j))}}\]
-										Proportional to the spectral power of the noise at the precession
-										frequency.
-									</li>
-									<li>
-										GR Precession frequency diverges with eccentricity
-										\[\color{yellow}{\nu_{GR}(j)}\propto 1/j^{2}\]
-									</li>
-
-								</ul>
-							</div>
-							<div class="col-6 fig-title">
-								<p>
-									Power spectrum
-								</p>
-								<p width="90%">
-									<img src="./images/acf_ft_L.png" alt="acf_ft_L.png" width="90%" /><br>
-									Bar-Or and Alexander (2014)
-								</p>
-								<ul>
-									<li>
-										<font color = "yellow">Adiabatic invariance</font> \(\nu_{GR}(j) =
-										2\pi/T_{\mathrm{coh}}\) <br  />
-									</li>
-
-								</ul>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section id="slide-20">
-					<h3>Scalar Resonant Relaxation</h3>
-					<div class="grid fig-title">
-						<div class="row">
-							<div class="col-4">
-								<h4 align="left">Fokker Plank Equation</h4>
-								<p>
-									$$
-									\frac{\partial P(J, t; a)}{\partial t} = \frac{1}{2}\frac{\partial}{\partial J} \bigg[J D_{JJ}^\mathrm{RR}(a, J) \frac{\partial}{\partial J} \frac{P(J,t; a)}{J} \bigg]
-									$$
-									$$
-									- \color{magenta}{\frac{\partial}{\partial J} \bigg[D_{J, \mathrm{friction}}^\mathrm{RR}(a, J)   P(J,t; a) \bigg]}
-									$$
-								</p>
-								<h4 align="left">Diffusion coefficient</h4>
-								<p align="left">
-									\(
-									D_{JJ}^\mathrm{RR}(a, J)  =
-									\)
-									$$
-									4 \pi G^2 \sum_i m_i^2 \sum_{n, n'} n^2 \int da' dJ' f(a',J')|A_{nn'}|^2
-									$$
-									$$
-									\quad \quad \quad \quad \times  \color{yellow}{\delta (n \nu_p(a,J) - n' \nu_p(a',J'))}
-									$$
-								</p>
-								<h4 align="left">"Dynamical friction"</h4>
-								<p align="left">
-									\(
-									\color{magenta}{D_{J, \mathrm{friction}}^\mathrm{RR}(a, J)} =
-									\)
-									$$
-									4 \pi G^2 \sum_i m_i^2 \sum_{n,n'} n n' \int da' dJ' J' \color{magenta}{\partial_J' \big[f(a',J')/J'\big]}|A_{nn'}|^2
-									$$
-									$$
-									\quad \quad \quad \quad  \times  \color{yellow}{\delta (n \nu_p(a,J) - n' \nu_p(a',J'))}
-									$$
-								</p>
-							</div>
-							<div class="col-8">
-								<div class="container">
-									<div class="fragment fade-out abs" data-fragment-index="1" align="right">
-										<img src="./images/DRR.png" width="80%" alt="">
-									</div>
-									<div class="fragment abs" data-fragment-index="1" align="right">
-										<img src="./images/DRR.png" width="80%" alt="">
-									</div>
-									<div class="fragment abs" data-fragment-index="1" align="right">
-										<img src="./images/DRR_res.png" width="80%" alt="">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section id="slide-orgheadline21">
-					<h3 id="orgheadline21">Relativistic orbits are driven by <br> <font color = "yellow">\(2\)-body relaxation</font></h3>
-					<div class="grid fig-title">
-						<div class="row">
-							<div class="col-12">
-								<div class="container">
-									<div class="fragment fade-out abs big-video" data-fragment-index="1">
-										<video data-src="./images/j_a_RR.mp4" type="video/mp4"></video>
-										<p>
-											Monte-Carlo simulation (Bar-Or and Alexander 2016)
-											<br>
-											(See \(N\)-body simulations in Merritt et al. 2011)
-										</p>
-									</div>
-									<div class="fragment  current-visible abs big-video" data-fragment-index="1">
-										<video class="fragment  current-visible" data-fragment-index="1"  data-src="./images/j_a_RR.mp4" type="video/mp4"></video>
-										<p>
-											Monte-Carlo simulation (Bar-Or and Alexander 2016)
-											<br>
-											(See \(N\)-body simulations in Merritt et al. 2011)
-										</p>
+									<div class="fragment fade-out abs" data-fragment-index="2">
+										<div class="figure">
+											<p>
+												<img src="./images/2body.png" alt="2body.png" width="60%" />
+											</p>
+										</div>
 									</div>
 									<div class="fragment abs" data-fragment-index="2">
-										<p width="50%">
-											<img src="./images/phase_space.png" alt="phase_space.png" width="60%" />
-											<br>
-											Bar-Or and Fouvry (2018)
-										</p>
-
+										<div class="figure">
+											<p>
+												<img src="./images/mass_wires.png" alt="mass_wires.png" />
+											</p>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-				</section>
-
-				<section id="slide-22">
-					<h3 id="orgheadline21">Timescales </h3>
-					<div class="grid fig-title">
-						<div class="row">
-							<div class="col-12">
-								<div class="container">
-									<div  class="abs">
-										<img src="./images/timescales_novrr.png" alt="timescales" width="60%" />
-										<br>
-										Bar-Or and Fouvry (2018)
-									</div>
-									<div  class="abs">
-										<img src="./images/s_stars_times.png" alt="s_stars_times.png" width="60%" />
-										<br>
-										Bar-Or and Fouvry (2018)
-									</div>
+						<div class="col-6 fig-title">
+							<div class="container">
+								<div class="fragment fade-out abs" data-fragment-index="1">
+									<video width="90%" poster="./images/nbody.png"></video>
+									<p>
+										\(N\)-body simulation (\(N=10^4\, t = 10^5 \mathrm{yr}\)) <br>
+										Bar-Or et al. (2013)
+									</p>
+								</div>
+								<div class="fragment current-visible abs" data-fragment-index="1">
+									<video loop data-autoplay data-src="./images/nbody.mp4" type="video/mp4"></video>
+									<p>
+										\(N\)-body simulation (\(N=10^4\, t = 10^5 \mathrm{yr}\)) <br>
+										Bar-Or et al. (2013)
+									</p>
+								</div>
+								<div class="fragment abs" data-fragment-index="2">
+									<video class="fragment" data-fragment-index="2" data-src="./images/nwires.mp4" type="video/mp4"></video>
+									<p>
+										\(N\)-body simulation (\(N=10^4\, t = 10^5 \mathrm{yr}\)) <br>
+										Bar-Or et al. (2013)
+									</p>
 								</div>
 							</div>
 						</div>
 					</div>
-				</section>
+				</div>
+			</section>
 
-				<section id="slide-23">
-					<h3>Vector Resonant Relaxation</h3>
-					<div class="grid fig-title">
-						<div class="row">
-							<div class="col-5">
-								<h4 align="left">Equation of motion</h4>
-								<p align="left">
-									$$
-									\frac{\partial \mathbf{L}}{\partial  t} = \frac{\partial }{\partial \mathbf{L}}\!\! \times \! (H \mathbf{L}) = M_{\ell k}(t) X_{\ell k}(\mathbf{L})
-									$$
+			<section id="slide-10">
+				<h3 id="orgheadline10">Key question: How to describe <font color = "yellow">resonant relaxation</font>?</h3>
+				<div class="grid">
+					<div class="row">
+						<div class="col-6">
+							<p>
+								<h4 align="left">
+									Challenges:
+								</h4>
+							</p>
+							<ul>
+								<li>Long range interactions</li>
+								<li>Long time <font color = "yellow">correlations</font></li>
+								<li>Multiple timescales: <font color = "yellow">correlated</font> process</li>
+
+							</ul>
+							<p>
+								<h4 align="left">
+									Description by a <font color = "yellow">diffusion</font> equation?
+								</h4>
+								<div style="text-align:left; font-size:0.8em">
+									(Rauch &amp; Tremaine 1996)
+								</div>
+							</p>
+							<div class="col-10">
+								<div class="figure">
+									<p>
+										<img src="./images/mass_wires.png" alt="mass_wires.png" width="100%" />
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-6 fig-title">
+							<video loop data-autoplay data-src="./images/nwires.mp4" type="video/mp4"></video>
+							<p>
+								\(N\)-body simulation (\(N=10^4,\, t = 10^5 \mathrm{yr}\)) <br >
+								Bar-Or et al. (2013)
+							</p>
+						</div>
+					</div>
+				</div>
+
+			</section>
+
+			<section id="slide-11">
+				<h3 id="orgheadline11"><font color = "yellow">Kinetic theory</font></h3>
+				<div class="grid">
+					<div class="row">
+						<div class="col-7">
+							<ul>
+								<li>
+									Orbit Averaged potential:
+									\[U\left(a,e,\theta,\phi,\psi,\color{yellow}{t}\right)=\sum_{k=1}^{N}\int\frac{dw}{2\pi}\int\frac{dw_{k}}{2\pi}\frac{GM_{\star}}{\left|\mathbf{r}-\color{yellow}{\mathbf{r}_{k}\left(t\right)}\right|}\]
+								</li>
+								<li>
+									Potential expansion:
+									\[U\left(a,e,\theta,\phi,\psi,t\right)=\sum_{l=0}^{\infty}\sum_{m=-l}^{l}\sum_{n=-l}^{l}D_{nm}^{l}\left(\psi,\theta,\phi\right)\color{yellow}{\eta_{nm}^{l}\left(a,e,t\right)}\]
+								</li>
+								<li>
+									Relativistic (\(l=1\)) Hamiltonian:
+									\[H_{\eta}=-j\nu_{GR}\left(j\right)J_{c}+\tau_{N}(j)\hat{e}_{\psi}(\phi,\theta,\psi)\cdot\color{yellow}{\boldsymbol{\eta}\left(t\right)}\]
+								</li>
+								<li>
+									<font color = "yellow">Stochastic</font> Equations of motion:
+									\[\dot{\boldsymbol{J}}=-\tau_{N}\left(J\right)\hat{e}_{\psi}\left(\phi,\theta,\psi\right)\times\color{yellow}{\boldsymbol{\eta}\left(t\right)}\]
+									\[\dot{\psi}=\nu_{GR}\left(j\right)+\frac{\tau_{N}\left(J\right)}{J}\left[\frac{\partial\log\tau_{N}\left(J\right)}{\partial\log J}\hat{e}_{\psi}\left(\phi,\theta,\psi\right)-\frac{J_{z}\cos\psi}{\sqrt{J^{2}-J_{z}^{2}}}\hat{e}_{J}\left(\phi,\theta,\psi\right)\right]\cdot\color{yellow}{\boldsymbol{\eta}\left(t\right)}\]
+								</li>
+
+							</ul>
+						</div>
+						<div class="col-6">
+
+							<div class="figure">
+								<p><img src="./images/Ylm_Dnlm_blackbg.png" alt="Ylm_Dnlm_blackbg.png" width="100%" />
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="slide-12">
+				<h3 id="orgheadline13">The <font color = "yellow">Stochastic</font> approach</h3>
+				<div class="grid">
+					<div class="row">
+						<div class="col-7">
+							<ul>
+								<li>
+									Stochastic Equations of motion:
+									\[\dot{\boldsymbol{J}}=-\tau_N(J)\hat{e}_\psi(\phi,\theta,\psi)\times\color{yellow}{\boldsymbol{\eta}(t)}\]
+									\[\dot{\psi}=\nu_{GR}(j)+[\dots]\cdot\color{yellow}{\boldsymbol{\eta}(t)}\]
+								</li>
+								<li>
+									Torque magnitude: \(\tau_{N}\propto(\sqrt{N(a)}/Q)J_{c}\)
+								</li>
+								<li>
+									Markovian approximation - <font color = "yellow">uncorrelated</font> noise:
+									\[\left\langle \eta_{i}(t)\eta_j(t^\prime)\right\rangle
+									=\delta_{ij}\delta((t-t^\prime)/T_\mathrm{coh})\]
+								</li>
+
+							</ul>
+
+							<div class="figure">
+								<p>
+									<img src="./images/Ylm_Dnlm_blackbg.png" alt="Ylm_Dnlm_blackbg.png" width="100%" />
+								</p>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="large-video">
+								<video loop data-autoplay data-src="./images/nrings.mp4" type="video/mp4"></video>
+							</div>
+							<p>
+								\(N\)-ring simulation
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="slide-13">
+				<h3 id="orgheadline14">Resonant relaxation can be <br> <font color = "yellow">extremely efficient</font></h3>
+				<div class="grid">
+					<div class="row">
+						<div class="col-6">
+							<ul>
+								<li>Random walk in phase space</li>
+								<li>Much faster than \(2\)-body relaxation</li>
+								<li><font color = "yellow">All stars will plunge into the massive black hole</font></li>
+								<li>General relativity is not included</li>
+							</ul>
+
+							<div class="figure">
+								<p>
+									<img src="./images/Jorbit.png" alt="Jorbit.png" width="80%" />
+								</p>
+							</div>
+						</div>
+						<div class="col-6 fig-title">
+							<div class="container">
+								<div class="fragment fade-out abs" data-fragment-index="1">
+									<p width="100%">
+										<img src="./images/j_a_noRR.png" alt="j_a_noRR.png" width="100%" />
+										Monte Carlo simulations: \(2\)-body only<br>
+										(Bar-Or and Alexander, 2016)
+									</p>
+								</div>
+								<div class="fragment abs" data-fragment-index="1">
+									<p>
+										<img src="./images/j_a_NRR.png" alt="j_a_NRR.png" />
+										Monte Carlo simulations: with resonant relaxation <br>
+										(Bar-Or and Alexander, 2016)
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="slide-14">
+				<h3 id="orgheadline15"><font color = "yellow">Relativistic</font> stars precess fast</h3>
+				<div class="grid">
+					<div class="row">
+						<div class="col-6">
+							<ul>
+								<li>
+									Precession frequency diverges with eccentricity
+									\[\color{yellow}{\nu_{GR}(j)}=3\frac{J_c^2}{J^{2}}\frac{r_{g}}{a}\nu_{r}\left(a\right)\]
+								</li>
+							</ul>
+
+							<div class="figure">
+								<p>
+									<img src="./images/prec.png" alt="prec.png" width="70%" />
+								</p>
+							</div>
+						</div>
+						<div class="col-6 fig-title">
+							<p>
+								S2
+							</p>
+							<p width="50%">
+								<img src="./images/gill09f3.png" alt="gill09f3.png" width="50%" /> <br>
+								Ghez et al. (2008), Gillessen et al. (2009)
+								\[T_{GR}\approx2\times10^{3}P\]
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="slide-15">
+				<h3 id="orgheadline16"><font color = "yellow">General relativistic</font> effects restrict the relaxation</h3>
+				<div class="grid">
+					<div class="row">
+						<div class="col-6">
+							<ul>
+								<li>Restricted random walk in phase space</li>
+								<li><font color = "yellow">Protection against direct plunges</font></li>
+							</ul>
+							<div class='citel'>
+								<p>
+									(Hopman &amp; Alexander 2006)
+								</p>
+							</div>
+							<ul>
+								<li>Emission of gravitational waves</li>
+								<li>Demonstrated in \(N\)-body simulations</li>
+
+							</ul>
+							<div class='citel'>
+								<p>
+									(Merritt et al. 2011, Brem et al. 2014)
+								</p>
+							</div>
+						</div>
+						<div class="col-6 fig-title">
+							<div class="container">
+								<p width="100%">
+									<img src="./images/j_a_rel.png" alt="j_a_rel.png" width="100%" />
+									Post-Newtonian \(N\)-body simulation (\(N=50\)) <br>
+									Kupi and Alexander (2012)
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="slide-16">
+				<h3 id="orgheadline17">Key question: How to describe <br> <font color = "yellow">relativistic</font> resonant relaxation?</h3>
+				<div class="grid">
+					<div class="row">
+						<div class="col-6">
+							<h4 align="left">
+								<p>
+									Challenges:
+								</p>
+							</h4>
+							<ul>
+								<li>Long range interactions &#10004;</li>
+								<li>Long time <font color = "yellow">correlations</font></li>
+								<li>Multiple timescales: <font color = "yellow">correlated</font> process
 									<ul>
-										<li>
-											Magnetization
-											\( M_{\ell k}(t) = \sum_{i}^{N} A_{\ell} Y_{\ell k}(\hat{\mathbf{L}}_i(t))\)
-										</li>
-										<li>
-											\(
-											X_{\ell k} =\mathbf{L} \!\! \times \! \frac{\partial Y}{\partial \mathbf{L}}
-											\)
-										</li>
+										<li>Non-relativistic orbits: \(2\pi/\nu_{GR} \gg T_\mathrm{coh}\)</li>
+										<li>Relativistic orbits: \(2\pi/\nu_{GR} \ll T_\mathrm{coh}\)</li>
+
 									</ul>
-
+								</li>
+							</ul>
+							<h4 align="left">
+								<p>
+									Description by a <font color = "yellow">diffusion</font> equation?
 								</p>
-								<h4 align="left">Statistical Description</h4>
-								<ul>
-									<li>
-										Typical torques \(\Gamma \sim \sqrt{\langle \dot{\mathbf{L}}\cdot \dot{\mathbf{L}} \rangle }\)
-									</li>
-									<li>
-										Coherence time \(T_\mathrm{c} \propto L_\mathrm{c}/\Gamma\)
-									</li>
-								</ul>
+							</h4>
+						</div>
+						<div class="col-6">
+							<h4  align="left">
+								<p>
+									Relativistic precession
+								</p>
+							</h4>
+							<p>
+								Precession frequency diverges with eccentricity
+								\[\color{yellow}{\nu_{GR}(j)}=3\frac{J_c^2}{J^{2}}\frac{r_{g}}{a}\nu_{r}\left(a\right)\]
+							</p>
 
-
-								<h4 align="left">Effective description</h4>
-								<p align="left">
-									$$
-									\frac{\partial \mathbf{L}}{\partial  t} = \Gamma \, \eta(t)\times\hat{\mathbf{L}}
-									$$
-									Correlated noise
-									\(
-									\langle \eta_i(t) \eta_j(t') \rangle = \delta_{ij} e^{-(t-t')^2/T_\mathrm{c}^2}
-									\)
+							<div class="figure">
+								<p>
+									<img src="./images/prec.png" alt="prec.png" width="50%" />
 								</p>
 							</div>
-							<div class="col-7">
-								<div class="container">
-									<div class="fragment fade-out abs" data-fragment-index="1" align="right">
-										<img src="./images/disk_interaction.png" width="100%" alt="">
-									</div>
-									<div class="fragment current-visible  abs" data-fragment-index="1" align="right">
-										<video loop data-autoplay data-src="./images/res_NoiseCorrelation_RandomWalk_OneMassHarmonic_seed_1.mp4" type="video/mp4"></video>
-									</div>
-									<div class="fragment current-visible abs" data-fragment-index="2" align="right">
-										<img src="./images/vrr_corr.png" width="100%" alt="">
-									</div>
-									<div class="fragment current-visible abs" data-fragment-index="3" align="right">
-										<img src="./images/figIllustrationRandom.png" width="100%" alt="">
-									</div>
-									<div class="fragment abs" data-fragment-index="4" align="right">
-										<img src="./images/figIllustrationRandomFake.png" width="100%" alt="">
-									</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="slide-17">
+				<h3 id="orgheadline18">Stochastic equations of motion with <font color = "yellow">correlated</font> noise</h3>
+				<div class="grid">
+					<div class="row">
+						<div class="col-6 fig-title">
+							<ul>
+								<li>
+									Stochastic Equations of motion:
+									\[\dot{\boldsymbol{J}}=-\tau_N(J)\hat{e}_\psi(\phi,\theta,\psi)\times\color{yellow}{\boldsymbol{\eta}(t)}\]
+								</li>
+								<li>
+									<font color = "yellow">Correlated</font> noise:
+									\[\left\langle \eta_{i}(t)\eta_j(t^\prime)\right\rangle
+									=\delta_{ij}C((t-t^\prime)/T_\mathrm{coh})\]
+								</li>
+
+							</ul>
+							<video loop data-autoplay data-src="./images/noise.mp4" type="video/mp4"></video>
+							<p>
+								Noise models
+							</p>
+						</div>
+						<div class="col-6 fig-title">
+							<p>
+								Power spectrum
+								<img src="./images/acf_ft_L.png" alt="acf_ft_L.png" /><br>
+								Bar-Or and Alexander (2014)
+							</p>
+						</div>
+					</div>
+				</div>
+
+			</section>
+
+			<section id="slide-18">
+				<h3 id="orgheadline19">Resonant relaxation can be described by an effective <font color = "yellow">diffusion equation</font></h3>
+				<div class="grid">
+					<div class="row">
+						<div class="col-6">
+							<ul>
+								<li>
+									The \(\mathbf{\eta}\)-formalism: Stellar background as
+									<font color = "yellow">correlated noise</font>
+									\[\dot{\boldsymbol{J}}=-\tau_N(J)\hat{e}_\psi(\phi,\theta,\psi)\times\color{yellow}{\boldsymbol{\eta}(t)}\]
+								</li>
+								<li>Effective <font color = "yellow">Fokker-Planck</font> (diffusion) equation</li>
+								<li>
+									<font color = "yellow">Noise dependent</font> diffusion coefficient:
+									\[ D_2(j) \propto\color{yellow}{{S_\eta}{\color{yellow}(\nu_{GR}(j))}}\]
+									Proportional to the spectral power of the noise at the precession
+									frequency.
+								</li>
+								<li>
+									GR Precession frequency diverges with eccentricity
+									\[\color{yellow}{\nu_{GR}(j)}\propto 1/j^{2}\]
+								</li>
+
+							</ul>
+						</div>
+						<div class="col-6 fig-title">
+							<p>
+								Power spectrum
+							</p>
+							<p width="90%">
+								<img src="./images/acf_ft_L.png" alt="acf_ft_L.png" width="90%" /><br>
+								Bar-Or and Alexander (2014)
+							</p>
+							<ul>
+								<li>
+									<font color = "yellow">Adiabatic invariance</font> \(\nu_{GR}(j) =
+									2\pi/T_{\mathrm{coh}}\) <br  />
+								</li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="slide-19">
+				<h3>Scalar Resonant Relaxation</h3>
+				<div class="grid fig-title">
+					<div class="row">
+						<div class="col-5">
+							<h4 align="left">Fokker Plank Equation</h4>
+							<p>
+								$$
+								\frac{\partial P(J, t; a)}{\partial t} = \frac{1}{2}\frac{\partial}{\partial J} \bigg[J D_{JJ}^\mathrm{RR}(a, J) \frac{\partial}{\partial J} \frac{P(J,t; a)}{J} \bigg]
+								$$
+								$$
+								- \color{magenta}{\frac{\partial}{\partial J} \bigg[D_{J, \mathrm{friction}}^\mathrm{RR}(a, J)   P(J,t; a) \bigg]}
+								$$
+							</p>
+							<h4 align="left">Diffusion coefficient</h4>
+							<p align="left">
+								\(
+								D_{JJ}^\mathrm{RR}(a, J)  =
+								\)
+								$$
+								4 \pi G^2 \sum_i m_i^2 \sum_{n, n'} n^2 \int da' dJ' f(a',J')|A_{nn'}|^2
+								$$
+								$$
+								\quad \quad \quad \quad \times  \color{yellow}{\delta (n \nu_p(a,J) - n' \nu_p(a',J'))}
+								$$
+							</p>
+							<h4 align="left">"Dynamical friction"</h4>
+							<p align="left">
+								\(
+								\color{magenta}{D_{J, \mathrm{friction}}^\mathrm{RR}(a, J)} =
+								\)
+								$$
+								4 \pi G^2 \sum_i m_i^2 \sum_{n,n'} n n' \int da' dJ' J' \color{magenta}{\partial_J' \big[f(a',J')/J'\big]}|A_{nn'}|^2
+								$$
+								$$
+								\quad \quad \quad \quad  \times  \color{yellow}{\delta (n \nu_p(a,J) - n' \nu_p(a',J'))}
+								$$
+							</p>
+						</div>
+						<div class="col-7">
+							<div class="container">
+								<div class="fragment fade-out abs" data-fragment-index="1">
+									<img src="./images/DRR.png" width="90%" alt="">
+									<p>
+										Bar-Or and Fouvry (2018)
+									</p>
+								</div>
+								<div class="fragment abs" data-fragment-index="1">
+									<img src="./images/DRR.png" width="90%" alt="">
+									<p>
+										Bar-Or and Fouvry (2018)
+									</p>
+								</div>
+								<div class="fragment abs" data-fragment-index="1">
+									<img src="./images/DRR_res.png" width="90%" alt="">
+									<p>
+										Bar-Or and Fouvry (2018)
+									</p>
 								</div>
 							</div>
 						</div>
 					</div>
-				</section>
+				</div>
+			</section>
 
-				<section id="slide-24">
-					<h3>Vector Resonant Relaxation can enhance <br> Eccentric  Binary black hole Mergers</h3>
-					<div class="grid fig-title">
-						<div class="row">
-							<div class="col-5">
+			<section id="slide-20">
+				<h3 id="orgheadline21">Relativistic orbits are driven by <br> <font color = "yellow">\(2\)-body relaxation</font></h3>
+				<div class="grid fig-title">
+					<div class="row">
+						<div class="col-12">
+							<div class="container">
+								<div class="fragment fade-out abs big-video" data-fragment-index="1">
+									<video data-src="./images/j_a_RR.mp4" type="video/mp4"></video>
+									<p>
+										Monte-Carlo simulation (Bar-Or and Alexander 2016)
+										<br>
+										(See \(N\)-body simulations in Merritt et al. 2011)
+									</p>
+								</div>
+								<div class="fragment  current-visible abs big-video" data-fragment-index="1">
+									<video class="fragment  current-visible" data-fragment-index="1"  data-src="./images/j_a_RR.mp4" type="video/mp4"></video>
+									<p>
+										Monte-Carlo simulation (Bar-Or and Alexander 2016)
+										<br>
+										(See \(N\)-body simulations in Merritt et al. 2011)
+									</p>
+								</div>
+								<div class="fragment abs" data-fragment-index="2">
+									<p width="50%">
+										<img src="./images/phase_space.png" alt="phase_space.png" width="60%" />
+										<br>
+										Bar-Or and Fouvry (2018)
+									</p>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="slide-21">
+				<h3 id="orgheadline21">Scalar Resonant Relaxation Can Effect the S-Stars cluster</h3>
+				<div class="grid fig-title">
+					<div class="row">
+						<div class="col-5">
+							<ul>
+								<li>
+									Nonresonant (\(2\)-body) relaxation (NR)
+									\( T_\mathrm{NR} \sim \frac{M_\bullet^2}{\langle m_\star^2 \rangle}\frac{P}{N_\star \log \Lambda} \)
+								</li>
+								<li>
+									Scalar resonant relaxation (RR)
+									\( T_\mathrm{RR} \sim \frac{M_\bullet^2}{\langle m_\star^2 \rangle}\frac{P^2}{T_M} \sim \frac{M_\bullet \langle m_\star \rangle}{\langle m_\star^2 \rangle} P   \)
+								</li>
+							</ul>
+
+						</div>
+						<div class="col-7">
+							<div class="container">
+								<div  class="abs">
+									<img src="./images/timescales_novrr.png" alt="timescales" width="100%" />
+								</div>
+								<div  class="abs">
+									<img src="./images/s_stars_times.png" alt="s_stars_times.png" width="100%" />
+									<p>
+										Bar-Or and Fouvry (2018)
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="slide-22">
+				<h3 id="orgheadline26">The S-stars: Paradox of youth</h3>
+				<div class="grid">
+					<div class="row">
+						<div class="col-5 fig-title">
+							<ul>
+								<li>Young, (relaxed) stellar population</li>
+								<li>Origin:
+									<ul>
+										<li>Stellar Disk (See Yuri Levin's talk)</li>
+										<li>Binary tidal disruption</li>
+
+									</ul>
+								</li>
+								<li>
+									Relaxtion mechanisem
+									<ul>
+										<li>Two-body relxation</li>
+										<li>Resonant relaxation</li>
+
+									</ul>
+								</li>
+
+							</ul>
+							<div class='citel'>
+								<p>
+									See also: Perets et al. 2008; Madigan et al. 2011; Antonini &amp; Merritt 2013; Hamers et al. 2014;
+									<img src="./images/td.png" alt="td.png" />
+									Hills 1988; Gould &amp; Quillen 2003
+								</p>
+							</div>
+						</div>
+						<div class="col-7 fig-title">
+							<div class="container">
+								<div class="fragment fade-out abs" data-fragment-index="1">
+									<p width="70%">
+										<img src="./images/Sstars.png" alt="Sstars.png" width="70%" /><br  />
+										Gillessen et al. (2009)
+									</p>
+								</div>
+								<div class="fragment abs" data-fragment-index="1">
+									<p>
+										<img src="./images/sstars_few_P.png" alt="sstars_few_P.png" /><br  />
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="slide-22">
+				<h3>Vector Resonant Relaxation</h3>
+				<div class="grid fig-title">
+					<div class="row">
+						<div class="col-5">
+							<h4 align="left">Equation of motion</h4>
+							<p align="left">
+								$$
+								\frac{\partial \mathbf{L}}{\partial  t} = \frac{\partial }{\partial \mathbf{L}}\!\! \times \! (H \mathbf{L}) = M_{\ell k}(t) X_{\ell k}(\mathbf{L})
+								$$
 								<ul>
 									<li>
-										Binary orbit driven by Lidov-Kozai oscillations
-										<p>
-											$$
-											t_\mathrm{LK} \sim \frac{P_\mathrm{out}^2}{P_\mathrm{in}} (1-e^2_\mathrm{out})^{3/2}
-											$$
-										</p>
+										Magnetization
+										\( M_{\ell k}(t) = \sum_{i}^{N} A_{\ell} Y_{\ell k}(\hat{\mathbf{L}}_i(t))\)
 									</li>
 									<li>
-										Outer orbit diriven by VRR
-										<p>
-											$$
-											t_\mathrm{VRR} \sim \frac{P_\mathrm{out}}{N_\star} \frac{M_\bullet}{m_\star}
-											$$
-										</p>
-									</li>
-									<li>
-										Maximal enchantment when \(t_\mathrm{LK} \sim t_\mathrm{VRR}\)
+										\(
+										X_{\ell k} =\mathbf{L} \!\! \times \! \frac{\partial Y}{\partial \mathbf{L}}
+										\)
 									</li>
 								</ul>
 
-							</div>
-							<div class="col-7">
-								<div class="container">
-									<div class="fragment fade-out abs" data-fragment-index="1" align="right">
-										<img src="./images/example_0_model3_ex_subindex_0.png" width="80%" alt="">
-									</div>
-									<div class="fragment current-visible  abs" data-fragment-index="1" align="right">
-										<img src="./images/example_1_model3_ex_subindex_0.png" width="80%" alt="">
-									</div>
-									<div class="fragment current-visible  abs" data-fragment-index="2" align="right">
-										<img src="./images/example_2_model3_ex_subindex_0.png" width="80%" alt="">
-									</div>
-									<div class="fragment abs" data-fragment-index="3" align="right">
-										<img src="./images/simple_R_f_enh_index_par1_0_index_par2_0_run02b_yscale_linear.png" width="80%" alt="">
-									</div>
+							</p>
+							<h4 align="left">Statistical Description</h4>
+							<ul>
+								<li>
+									Angular momentum growth rate \(\Gamma = \sqrt{\frac{1}{2}\langle \dot{\mathbf{L}}\cdot \dot{\mathbf{L}} \rangle }/L \sim \frac{\sqrt{\langle m^2 \rangle}}{M_\bullet} \frac{N_\star}{\sqrt{1-e^2}P}\)
+								</li>
+								<li>
+									Coherence time \(T_\mathrm{c} \approx 0.4/\Gamma\)
+								</li>
+							</ul>
+
+
+							<h4 align="left">Effective description</h4>
+							<p align="left">
+								$$
+								\frac{\partial \mathbf{L}}{\partial  t} \approx \Gamma \, \eta(t)\times\hat{\mathbf{L}}
+								$$
+								Correlated noise
+								\(
+								\langle \eta_i(t) \eta_j(t') \rangle = \delta_{ij} e^{-(t-t')^2/T_\mathrm{c}^2}
+								\)
+							</p>
+						</div>
+						<div class="col-7">
+							<div class="container">
+								<div class="fragment fade-out abs" data-fragment-index="1">
+									<img src="./images/disk_interaction.png" width="100%" alt="">
+								</div>
+								<div class="fragment current-visible  abs" data-fragment-index="1">
+									<video loop data-autoplay data-src="./images/res_NoiseCorrelation_RandomWalk_OneMassHarmonic_seed_1.mp4" type="video/mp4"></video>
+									<p>
+										Fouvry, Bar-Or and Chavanis (2018)
+									</p>
+								</div>
+								<div class="fragment current-visible abs" data-fragment-index="2">
+									<img src="./images/vrr_corr.png" width="100%" alt="">
+									<p>
+										Fouvry, Bar-Or and Chavanis (2018)
+									</p>
+								</div>
+								<div class="fragment current-visible abs" data-fragment-index="3">
+									<img src="./images/figIllustrationRandom.png" width="100%" alt="">
+									<p>
+										Fouvry, Bar-Or and Chavanis (2018)
+									</p>
+								</div>
+								<div class="fragment abs" data-fragment-index="4">
+									<img src="./images/figIllustrationRandomFake.png" width="100%" alt="">
+									<p>
+										Fouvry, Bar-Or and Chavanis (2018)
+									</p>
 								</div>
 							</div>
 						</div>
 					</div>
-				</section>
+				</div>
+			</section>
 
-				<section id="slide-25">
-					<h3>Vector Resonant Relaxation can randomize stellar disks</h3>
-					<div class="grid fig-title">
-						<div class="row">
-							<div class="col-5">
-								<ul>
+			<section id="slide-23">
+				<h3>Vector Resonant Relaxation can enhance <br> Eccentric  Binary black hole Mergers</h3>
+				<div class="grid fig-title">
+					<div class="row">
+						<div class="col-5">
+							<ul>
+								<li>
+									Binary orbit driven by Lidov-Kozai oscillations
+									<p>
+										$$
+										t_\mathrm{LK} \sim \frac{P_\mathrm{out}^2}{P_\mathrm{in}} (1-e^2_\mathrm{out})^{3/2}
+										$$
+									</p>
+								</li>
+								<li>
+									Outer orbit diriven by VRR
+									<p>
+										$$
+										t_\mathrm{VRR} \sim \frac{P_\mathrm{out}}{N_\star} \frac{M_\bullet}{m_\star} \sqrt{1-e_\mathrm{out}^2}
+										$$
+									</p>
+								</li>
+								<li>
+									Maximal enchantment when \(t_\mathrm{LK} \sim t_\mathrm{VRR}\)
+								</li>
+							</ul>
 
-								</ul>
-
-							</div>
-							<div class="col-7">
-								<div class="container">
-									<div class="fragment fade-out abs" data-fragment-index="1" align="right">
-										<img src="./images/timescales.png" width="90%" alt="">
-									</div>
-									<div class="fragment fade-out abs" data-fragment-index="1" align="right">
-										<img src="./images/s_stars_times.png" width="90%" alt="">
-									</div>
-									<div class="fragment current-visible  abs" data-fragment-index="2" align="right">
-										<video loop data-autoplay data-src="./images/res_Neighbors_diffL_diffK_seed_2.mp4" type="video/mp4"></video>
-									</div>
-									<div class="fragment abs" data-fragment-index="3" align="right">
-										<video loop data-autoplay data-src="./images/res_Neighbors_diffL_sameK_kappa_2000_seed_2.mp4" type="video/mp4"></video>
-									</div>
+						</div>
+						<div class="col-7">
+							<div class="container">
+								<div class="fragment fade-out abs" data-fragment-index="1">
+									<img src="./images/example_0_model3_ex_subindex_0.png" width="80%" alt="">
+									<p>
+										Hamers, Bar-Or, Petrovich, and Antonini (2018)
+									</p>
+								</div>
+								<div class="fragment current-visible  abs" data-fragment-index="1">
+									<img src="./images/example_1_model3_ex_subindex_0.png" width="80%" alt="">
+									<p>
+										Hamers, Bar-Or, Petrovich, and Antonini (2018)
+									</p>
+								</div>
+								<div class="fragment current-visible  abs" data-fragment-index="2">
+									<img src="./images/example_2_model3_ex_subindex_0.png" width="80%" alt="">
+									<p>
+										Hamers, Bar-Or, Petrovich, and Antonini (2018)
+									</p>
+								</div>
+								<div class="fragment abs" data-fragment-index="3">
+									<img src="./images/simple_R_f_enh_index_par1_0_index_par2_0_run02b_yscale_linear.png" width="80%" alt="">
+									<p>
+										Hamers, Bar-Or, Petrovich, and Antonini (2018)
+									</p>
 								</div>
 							</div>
 						</div>
 					</div>
-				</section>
-			</div>
+				</div>
+			</section>
+
+			<section id="slide-24">
+				<h3>Vector Resonant Relaxation can randomize stellar disks</h3>
+				<div class="grid fig-title">
+					<div class="row">
+						<div class="col-5">
+							<ul>
+
+							</ul>
+
+						</div>
+						<div class="col-7">
+							<div class="container">
+								<div class="fragment fade-out abs" data-fragment-index="1">
+									<img src="./images/timescales.png" width="90%" alt="">
+								</div>
+								<div class="fragment fade-out abs" data-fragment-index="1">
+									<img src="./images/s_stars_times.png" width="90%" alt="">
+									<p>
+										Fouvry, Bar-Or and Chavanis (2018)
+									</p>
+								</div>
+								<div class="fragment abs" data-fragment-index="1">
+									<video loop data-autoplay data-src="./images/res_Neighbors_diffL_diffK_kappa_2000_seed_2.mp4" type="video/mp4"></video>
+									<p>
+										Bar-Or, Fouvry and Chavanis (in prep.)
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="slide-25">
+				<h2 id="orgheadline27">Summary</h2>
+				<ul>
+					<li><font color = "yellow">Statistical mechanics</font> framework for resonant relaxation</li>
+					<li>Representation of the background as <font color = "yellow">correlated noise</font></li>
+					<li>Derivation of an <font color = "yellow">effective diffusion equation</font> for a general correlated noise</li>
+					<li>Relativistic orbits are <font color = "yellow">adiabatically protected</font> against RR</li>
+					<li>The steady state depends mostly on <br>
+						<font color = "yellow">\(2\)-body relaxation</font>
+					</li>
+					<li>RR can be important in special cases</li>
+				</ul>
+			</section>
+
 		</div>
+	</div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
 
-		<script>
-		// More info about config & dependencies:
-		// - https://github.com/hakimel/reveal.js#configuration
-		// - https://github.com/hakimel/reveal.js#dependencies
-		Reveal.initialize({
-			controls: false,
-			progress: false,
-			history: true,
-			center: false,
-			slideNumber: true,
-			rollingLinks: false,
-			keyboard: true,
-			overview: false,
-			width: 1366,
-			height: 768,
-			margin: 0.20,
-			theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-			transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
-			transitionSpeed: 'default',
-			dependencies: [
-				{ src: './js/video_frag.js' },
-				{ src: 'plugin/markdown/marked.js' },
-				{ src: 'plugin/markdown/markdown.js' },
-				{ src: 'plugin/notes/notes.js', async: true },
-				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-			]
-		});
-		</script>
-	</body>
-	</html>
+	<script>
+	// More info about config & dependencies:
+	// - https://github.com/hakimel/reveal.js#configuration
+	// - https://github.com/hakimel/reveal.js#dependencies
+	Reveal.initialize({
+		controls: false,
+		progress: false,
+		history: true,
+		center: false,
+		slideNumber: false,
+		rollingLinks: false,
+		keyboard: true,
+		overview: false,
+		width: 1366,
+		height: 768,
+		margin: 0.20,
+		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+		transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+		transitionSpeed: 'default',
+		dependencies: [
+			{ src: './js/video_frag.js' },
+			{ src: 'plugin/markdown/marked.js' },
+			{ src: 'plugin/markdown/markdown.js' },
+			{ src: 'plugin/notes/notes.js', async: true },
+			{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+		]
+	});
+</script>
+</body>
+</html>

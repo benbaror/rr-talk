@@ -18,8 +18,6 @@ body {
     display: block;
 }
 
-.reveal p {
-}
 
 .tight {
     margin: 0;
@@ -35,23 +33,15 @@ body {
     font-size: 50%;
 }
 
-.cite p{
+.reveal .cite p{
     position: relative;
-    top: 5px;
+    top: 1px;
     font-size: 80%;
     margin: 0 auto;
     text-align: center;
     line-height: 0;
 }
 
-.cite div{
-    position: relative;
-    top: 5px;
-    font-size: 80%;
-    margin: 0 auto;
-    text-align: center;
-    line-height: 0;
-}
 .row.lift{
    position: relative;
    top: -70px
